@@ -73,6 +73,9 @@ hr {
   .icon-design {
     @apply text-text_colour text-2xl border border-secondary_colour p-3 rounded-full hover:border hover:border-primary_colour hover:text-primary_colour;
   }
+  .icon-design-right {
+    @apply text-text_colour text-xl border border-secondary_colour p-2 rounded-full hover:border hover:border-primary_colour hover:text-primary_colour;
+  }
 }
 
 /* @layer base {
