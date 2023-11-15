@@ -11,12 +11,12 @@ const LeftSidebar = () => {
   return (
     <div className="p-8 flex flex-col">
       <div className="items-center w-full">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col ">
           <h2 className="lg:text-3xl sm:text-2xl font-bold font-serif text-white ">
             IMRAN HOSSAIN
           </h2>
-          <h4 className="lg:text-lg sm:text-xs text-xs font-serif font-medium text-white text-right">
-            FULL-STACK <br /> DEVELOPER
+          <h4 className="lg:text-lg sm:text-xs text-xs font-serif font-medium text-white">
+            FULL-STACK DEVELOPER
           </h4>
         </div>
       </div>
