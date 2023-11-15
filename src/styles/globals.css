@@ -73,6 +73,9 @@ hr {
   .icon-design {
     @apply text-text_colour text-2xl border border-secondary_colour p-3 rounded-full hover:border hover:border-primary_colour hover:text-primary_colour;
   }
+  .icon-design-right-for-hover {
+    @apply absolute right-full top-1/2 z-20 mr-2 -translate-y-1/2 whitespace-nowrap  py-1.5 px-3.5 text-sm text-text_colour opacity-0 group-hover:opacity-100 bg-[#404042];
+  }
   .icon-design-right {
     @apply text-text_colour text-xl border border-secondary_colour p-2 rounded-full hover:border hover:border-primary_colour hover:text-primary_colour;
   }

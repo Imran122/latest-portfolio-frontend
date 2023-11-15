@@ -20,7 +20,7 @@ const LeftSidebar = () => {
           </h4>
         </div>
       </div>
-      <div className="w-full  items-center justify-center mt-4">
+      <div className="w-full  mt-4">
         <Image
           className="w-full h-72 items-center justify-center rounded-xl "
           src={profile}
@@ -60,11 +60,18 @@ const LeftSidebar = () => {
             <FaInstagramSquare />
           </span>
         </div>
-        <div className="hover:border text-center text-xl font-normal items-center hover:border-primary_colour mt-4 hover:bg-[#212529] bg-primary_colour w-full rounded-3xl hover:text-white ">
+
+        <button className="mt-4 group relative p-4 overflow-hidden rounded-3xl bg-white text-xl shadow w-full ">
+          <div className="absolute inset-0 w-3 bg-primary_colour transition-all duration-[250ms] ease-out group-hover:w-full "></div>
+          <span className="relative text-black group-hover:text-white text-center ">
+            HIRE ME!
+          </span>
+        </button>
+        {/*  <div className="hover:border text-center text-xl font-normal items-center hover:border-primary_colour mt-4 hover:bg-[#212529] bg-primary_colour w-full rounded-3xl hover:text-white ">
           <button type="buton" className="p-4   ">
             HIRE ME
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
