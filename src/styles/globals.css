@@ -4,10 +4,13 @@
 
 :root {
   --custom_button_color: #e25e3e;
-  --secondary-colour: #ff9b50;
-  --bold-text-colour: #424e79;
+  --secondary-colour: #565656;
+  --primary-colour: #28e98c;
+  --text-colour: #999999;
 }
-
+body {
+  background-color: #212529;
+}
 *,
 *::after,
 *::before {
@@ -15,14 +18,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-section {
-  padding: 70px 0 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 a,
@@ -72,3 +67,20 @@ hr {
   opacity: 1;
   background-color: transparent;
 }
+
+/* css function  */
+@layer components {
+  .icon-design {
+    @apply text-text_colour text-2xl border border-secondary_colour p-3 rounded-full hover:border hover:border-primary_colour hover:text-primary_colour;
+  }
+}
+
+/* @layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+ */
