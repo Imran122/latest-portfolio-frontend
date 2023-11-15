@@ -12,29 +12,32 @@ const LeftSidebar = () => {
     <div className="p-8 flex flex-col">
       <div className="items-center w-full">
         <div className="flex justify-between items-center">
-          <h2 className="text-3xl font-bold font-serif text-white ">
+          <h2 className="lg:text-3xl sm:text-2xl font-bold font-serif text-white ">
             IMRAN HOSSAIN
           </h2>
-          <h4 className="text-md font-serif font-medium text-white text-right">
+          <h4 className="lg:text-lg sm:text-xs text-xs font-serif font-medium text-white text-right">
             FULL-STACK <br /> DEVELOPER
           </h4>
         </div>
       </div>
       <div className="w-full  items-center justify-center mt-4">
         <Image
-          className="w-full h-96 items-center justify-center rounded-xl "
+          className="w-full h-72 items-center justify-center rounded-xl "
           src={profile}
           alt="profile-image"
         ></Image>
       </div>
       <div className="">
-        <h2 className="text-2xl font-serif font-medium text-white text-center mt-6">
+        <h2 className="lg:text-2xl sm:text-lg font-serif font-medium text-white text-center mt-6">
           mdimranhossain122@gmail.com
         </h2>
-        <h3 className="text-xl font-serif font-medium text-white text-center mt-3">
-          uttara,Dhaka,Bangladesh
+        <h3 className="lg:text-xl sm:text-sm font-serif font-medium text-white text-center mt-3">
+          Whatsapp: +8801682765544
         </h3>
-        <p className="text-sm font-serif font-medium text-white text-center mt-3">
+        <h3 className="lg:text-xl sm:text-sm font-serif font-medium text-white text-center ">
+          uttara, Dhaka, Bangladesh
+        </h3>
+        <p className="lg:text-sm sm:text-xs font-serif font-medium text-white text-center mt-1">
           @ 2023 IMRAN. All Rights Reserved
         </p>
       </div>

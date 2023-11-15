@@ -9,11 +9,13 @@ const HomePage = () => {
           <LeftSidebar></LeftSidebar>
         </div>
       </div> */}
-
-      <div className="lg:col-span-3 border border-secondary_colour lg:sticky h-[840px] lg:left-2 lg:top-1/2 lg:-translate-y-1/2 ">
-        <LeftSidebar></LeftSidebar>
+      <div className="lg:h-screen lg:col-span-3 lg:sticky lg:top-0 flex items-center lg:left-2">
+        <div className="border border-secondary_colour w-full">
+          <LeftSidebar></LeftSidebar>
+        </div>
       </div>
-      <div className="lg:col-span-8 lg:max-w-5xl mx-auto border">
+
+      <div className="lg:col-span-8 lg:max-w-5xl mx-auto border lg:mt-0 sm:mt-6 mt-6">
         <p>
           Since beginning my journey as a freelance designer nearly 8 years ago,
           done rem remote work for agencies, consulted for startups, and
@@ -125,10 +127,8 @@ const HomePage = () => {
           chopsone design problem at a time.
         </p>
       </div>
-      <div className="relative">
-        <div className="lg:col-span-1 invisible lg:visible border border-secondary_colour rounded-3xl lg:sticky lg:h-[450px] lg:w-24 lg:top-1/2 lg:-translate-y-1/2 lg:right-0">
-          <RightSidebar></RightSidebar>
-        </div>
+      <div className="lg:col-span-1 hidden lg:block border border-secondary_colour rounded-3xl lg:sticky lg:h-[450px] lg:w-24 lg:top-1/2 lg:-translate-y-1/2 lg:right-0">
+        <RightSidebar></RightSidebar>
       </div>
     </div>
   );
