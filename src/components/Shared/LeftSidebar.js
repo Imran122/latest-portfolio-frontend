@@ -28,7 +28,7 @@ const LeftSidebar = () => {
         ></Image>
       </div>
       <div className="">
-        <h2 className="lg:text-2xl sm:text-lg font-serif font-medium text-white text-center mt-6">
+        <h2 className="lg:text-xl sm:text-lg font-serif font-medium text-white text-center mt-6">
           mdimranhossain122@gmail.com
         </h2>
         <h3 className="lg:text-xl sm:text-sm font-serif font-medium text-white text-center mt-3">

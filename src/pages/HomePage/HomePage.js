@@ -3,7 +3,7 @@ import RightSidebar from "@/components/Shared/RightSidebar";
 
 const HomePage = () => {
   return (
-    <div className="grid lg:grid-cols-10 px-3 lg:px-0">
+    <div className="grid lg:grid-cols-10 px-3 lg:px-0 gap-4">
       {/* <div className="relative">
         <div className="lg:col-span-3 border border-secondary_colour rounded-sm lg:sticky lg:h-[840px] lg:top-1/2 lg:-translate-y-1/2 lg:left-2">
           <LeftSidebar></LeftSidebar>
