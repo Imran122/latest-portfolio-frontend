@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bree+Serif&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Seymour+One&display=swap");
 :root {
   --custom_button_color: #e25e3e;
   --secondary-colour: #565656;
   --primary-colour: #28e98c;
   --text-colour: #999999;
+  --custom-intro-font: "Bree Serif", serif;
+  --custom-name-font: "Archivo Black", sans-serif;
 }
 body {
   background-color: #212529;
@@ -78,6 +82,12 @@ hr {
   }
   .icon-design-right {
     @apply text-text_colour text-xl border border-secondary_colour p-2 rounded-full hover:border hover:border-primary_colour hover:text-primary_colour;
+  }
+  .middle-body-buton {
+    @apply border text-text_colour border-text_colour gap-2 items-center px-4 py-2 rounded-full mt-4 w-auto inline-flex;
+  }
+  .middle-body-title {
+    @apply text-white text-5xl font-light font-custom-intro-font;
   }
 }
 

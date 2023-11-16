@@ -28,16 +28,16 @@ const LeftSidebar = () => {
         ></Image>
       </div>
       <div className="flex flex-col flex-wrap text-center">
-        <h2 className="lg:text-xl sm:text-lg cs-screen:text-[14px] font-serif font-medium text-white text-center mt-6">
+        <h2 className="lg:text-xl sm:text-lg cs-screen:text-[12px]  font-serif font-medium text-white text-center mt-6">
           mdimranhossain122@gmail.com
         </h2>
-        <h3 className="lg:text-xl sm:text-sm cs-screen:text-[14px] font-serif font-medium text-white text-center mt-3">
+        <h3 className="lg:text-xl sm:text-sm cs-screen:text-[12px] font-serif font-medium text-white text-center mt-3">
           Whatsapp: +8801682765544
         </h3>
-        <h3 className="lg:text-xl sm:text-sm cs-screen:text-[14px] font-serif font-medium text-white text-center ">
+        <h3 className="lg:text-xl sm:text-sm cs-screen:text-[12px] font-serif font-medium text-white text-center ">
           uttara, Dhaka, Bangladesh
         </h3>
-        <p className="lg:text-sm sm:text-xs cs-screen:text-[14px] font-serif font-medium text-white text-center mt-1">
+        <p className="lg:text-sm sm:text-xs cs-screen:text-[12px] font-serif font-medium text-white text-center mt-1">
           @ 2023 IMRAN. All Rights Reserved
         </p>
       </div>
