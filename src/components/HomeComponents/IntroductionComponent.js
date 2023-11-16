@@ -17,7 +17,7 @@ const IntroductionComponent = () => {
         <div className="mt-16 ">
           <h2 className="md:text-7xl text-4xl uppercase font-custom-intro-font text-white font-normal leading-normal ">
             Hi, I AM{" "}
-            <span className="text-primary_colour font-custom-name-font font-bold ">
+            <span className="text-primary_colour font-custom_name_font font-bold ">
               IMRAN HOSSAIN
             </span>
             ,
@@ -35,7 +35,11 @@ const IntroductionComponent = () => {
           <div className="flex items-center justify-end">
             {" "}
             {/* Use justify-end to align to the right */}
-            <Image src={projectimg} alt="project-image" />
+            <Image
+              className="animate-spin-slow"
+              src={projectimg}
+              alt="project-image"
+            />
             <span className="absolute top-1/2  right-[30px] transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white">
               <FaArrowDown />
             </span>

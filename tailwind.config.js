@@ -23,9 +23,13 @@ module.exports = {
         "cs-screen": [{ min: "1020px", max: "1420px" }],
       },
       fontFamily: {
-        "custom-intro-font": "var(--custom-intro-font)",
-        "custom-name-font": "var(--custom-name-font)",
+        custom_intro_font: "var(--custom-intro-font)",
+        custom_name_font: "var(--custom-name-font)",
+        custom_subtitle_font: "var(--custom-subtitle-font)",
       },
+    },
+    animation: {
+      "spin-slow": "spin 6s linear infinite",
     },
   },
   plugins: [],

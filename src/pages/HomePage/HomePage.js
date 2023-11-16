@@ -1,6 +1,8 @@
 import AboutComponent from "@/components/HomeComponents/AboutComponent";
 import IntroductionComponent from "@/components/HomeComponents/IntroductionComponent";
+import MySkills from "@/components/HomeComponents/MySkills";
 import ResumeComponent from "@/components/HomeComponents/ResumeComponent";
+import ServiceComponent from "@/components/HomeComponents/ServiceComponent";
 import LeftSidebar from "@/components/Shared/LeftSidebar";
 import RightSidebar from "@/components/Shared/RightSidebar";
 
@@ -19,11 +21,13 @@ const HomePage = () => {
       </div>
 
       {/*  <div className="lg:col-span-7 lg:max-w-6xl mx-auto border lg:mt-16 sm:mt-6 mt-6"> */}
-      <div className="lg:col-span-7  border lg:mt-16 sm:mt-6 mt-6">
-        <div className="w-full px-36">
+      <div className="lg:col-span-7   lg:mt-16 sm:mt-6 mt-6">
+        <div className="w-full lg:px-36">
           <IntroductionComponent></IntroductionComponent>
           <AboutComponent></AboutComponent>
           <ResumeComponent></ResumeComponent>
+          <ServiceComponent></ServiceComponent>
+          <MySkills></MySkills>
         </div>
       </div>
       <div className="lg:col-span-1 hidden lg:block border border-secondary_colour rounded-3xl lg:sticky lg:h-[450px] lg:w-24 lg:top-1/2 lg:-translate-y-1/2 lg:right-0">

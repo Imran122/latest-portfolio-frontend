@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bree+Serif&family=Merriweather+Sans:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Seymour+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bree+Serif&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Seymour+One&display=swap");
 :root {
@@ -11,6 +11,7 @@
   --text-colour: #999999;
   --custom-intro-font: "Bree Serif", serif;
   --custom-name-font: "Archivo Black", sans-serif;
+  --custom-subtitle-font: "Merriweather Sans", sans-serif;
 }
 body {
   background-color: #212529;
@@ -145,7 +146,13 @@ hr {
     @apply border text-text_colour border-text_colour gap-2 items-center px-4 py-2 rounded-full mt-4 w-auto inline-flex;
   }
   .middle-body-title {
-    @apply text-white text-5xl font-light font-custom-intro-font;
+    @apply text-white text-5xl font-light font-custom_intro_font;
+  }
+  .middle-body-skill-div {
+    @apply flex flex-col gap-2 py-16 px-0 justify-center items-center border border-text_colour hover:border-primary_colour rounded-[85px];
+  }
+  .middle-body-skill-h-text {
+    @apply text-text_colour text-xl font-custom_subtitle_font font-medium uppercase mt-4 hover:text-primary_colour;
   }
 }
 
