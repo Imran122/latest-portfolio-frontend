@@ -72,6 +72,64 @@ hr {
   background-color: transparent;
 }
 
+.side-desing-resume::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--text-colour);
+  border-radius: 50%;
+  left: -30px;
+  right: 115px;
+  top: 5px;
+  transition: 0.3s;
+}
+.side-desing-resume::after {
+  content: "";
+  background: #333333;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: -25px;
+  right: 115px;
+  top: 5px;
+  z-index: -1;
+}
+.side-desing-resume2nd::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--text-colour);
+  border-radius: 50%;
+  left: -30px;
+  right: 115px;
+  top: 155px;
+  transition: 0.3s;
+}
+.side-desing-resume3rd::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--text-colour);
+  border-radius: 50%;
+  left: -30px;
+  right: 115px;
+  top: 295px;
+  transition: 0.3s;
+}
+/* .side-desing-resume2nd::after {
+  content: "";
+  background: #333333;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: -25px;
+  right: 115px;
+  top: 115px;
+  z-index: -1;
+} */
 /* css function  */
 @layer components {
   .icon-design {
