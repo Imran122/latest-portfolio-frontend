@@ -1,4 +1,5 @@
 import AboutComponent from "@/components/HomeComponents/AboutComponent";
+import ContactComponent from "@/components/HomeComponents/ContactComponent";
 import IntroductionComponent from "@/components/HomeComponents/IntroductionComponent";
 import MySkills from "@/components/HomeComponents/MySkills";
 import PortfolioComponent from "@/components/HomeComponents/PortfolioComponent";
@@ -30,6 +31,7 @@ const HomePage = () => {
           <ServiceComponent></ServiceComponent>
           <MySkills></MySkills>
           <PortfolioComponent></PortfolioComponent>
+          <ContactComponent></ContactComponent>
         </div>
       </div>
       <div className="lg:col-span-1 hidden lg:block border border-secondary_colour rounded-3xl lg:sticky lg:h-[450px] lg:w-24 lg:top-1/2 lg:-translate-y-1/2 lg:right-0">
