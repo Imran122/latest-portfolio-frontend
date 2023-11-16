@@ -9,7 +9,7 @@ import { ImStackoverflow } from "react-icons/im";
 import profile from "../../assets/images/profileimg/profile2.jpg";
 const LeftSidebar = () => {
   return (
-    <div className="p-8 flex flex-col">
+    <div className=" flex flex-col text-center p-4">
       <div className="items-center w-full">
         <div className="flex flex-col ">
           <h2 className="lg:text-3xl sm:text-2xl font-bold font-serif text-white ">
@@ -20,30 +20,30 @@ const LeftSidebar = () => {
           </h4>
         </div>
       </div>
-      <div className="w-full  mt-4">
+      <div className="w-full  mt-4 flex items-center justify-center">
         <Image
-          className="w-full h-72 items-center justify-center rounded-xl "
+          className="lg:w-full w-[300px] h-72 items-center justify-center rounded-xl "
           src={profile}
           alt="profile-image"
         ></Image>
       </div>
-      <div className="">
-        <h2 className="lg:text-xl sm:text-lg font-serif font-medium text-white text-center mt-6">
+      <div className="flex flex-col flex-wrap text-center">
+        <h2 className="lg:text-xl sm:text-lg cs-screen:text-[14px] font-serif font-medium text-white text-center mt-6">
           mdimranhossain122@gmail.com
         </h2>
-        <h3 className="lg:text-xl sm:text-sm font-serif font-medium text-white text-center mt-3">
+        <h3 className="lg:text-xl sm:text-sm cs-screen:text-[14px] font-serif font-medium text-white text-center mt-3">
           Whatsapp: +8801682765544
         </h3>
-        <h3 className="lg:text-xl sm:text-sm font-serif font-medium text-white text-center ">
+        <h3 className="lg:text-xl sm:text-sm cs-screen:text-[14px] font-serif font-medium text-white text-center ">
           uttara, Dhaka, Bangladesh
         </h3>
-        <p className="lg:text-sm sm:text-xs font-serif font-medium text-white text-center mt-1">
+        <p className="lg:text-sm sm:text-xs cs-screen:text-[14px] font-serif font-medium text-white text-center mt-1">
           @ 2023 IMRAN. All Rights Reserved
         </p>
       </div>
       {/*  icon-design css calss is a resuable css it is in global css */}
       <div className="mt-12">
-        <div className="flex flex-row gap-3 items-center justify-center">
+        <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
           <span className="icon-design">
             <FaLinkedin />
           </span>
@@ -61,7 +61,7 @@ const LeftSidebar = () => {
           </span>
         </div>
 
-        <button className="mt-4 group relative p-4 overflow-hidden rounded-3xl bg-white text-xl shadow w-full focus:outline-none">
+        <button className="mt-4 mb-4  group relative p-4 overflow-hidden rounded-3xl bg-white text-xl shadow w-full focus:outline-none">
           <div className="absolute inset-0 w-3 bg-primary_colour transition-all duration-[250ms] ease-out group-hover:w-full"></div>
           <span className="relative text-black group-hover:text-white text-center">
             HIRE ME!

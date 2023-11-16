@@ -19,6 +19,9 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       display: ["group-hover"],
+      screens: {
+        "cs-screen": [{ min: "1020px", max: "1420px" }],
+      },
     },
   },
   plugins: [],
