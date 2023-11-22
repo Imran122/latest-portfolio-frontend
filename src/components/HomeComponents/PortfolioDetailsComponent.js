@@ -1,10 +1,25 @@
 import Image from "next/image";
+import { useEffect } from "react";
 import { ImCancelCircle } from "react-icons/im";
 import portfolio2 from "../../assets/images/portfolio/portfolio2.png";
 const PortfolioDetailsComponent = ({ isOpen, onClose }) => {
   const modalClass = isOpen
-    ? "absolute top-0 w-full left-0 justify-center items-center duration-700 opacity-100 scale-100 "
+    ? "absolute z-50 top-0 w-full left-0 justify-center items-center duration-700 opacity-100 scale-100 "
     : " absolute top-0 opacity-0 scale-50 w-full left-0  justify-center items-center  duration-700";
+  useEffect(() => {
+    // Add a class to the body when the modal is open
+    if (isOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+
+    // Cleanup: Remove the class when the component unmounts
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [isOpen]);
+
   return (
     <div className=" flex ">
       <div className={modalClass} id="modal">

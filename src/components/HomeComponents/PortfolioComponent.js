@@ -109,6 +109,7 @@ const PortfolioComponent = () => {
       </div>
 
       {/*   modal work */}
+      <button onClick={openModal}>Open Modal</button>
       <PortfolioDetailsComponent
         isOpen={isModalOpen}
         onClose={closeModal}

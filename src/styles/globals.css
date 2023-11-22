@@ -73,6 +73,23 @@ hr {
   background-color: transparent;
 }
 
+/* dom manupulation for opup open to make bg blur */
+/* styles.css */
+
+.modal-open::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+/* dom manupulation for opup open to make bg blur */
+
 .side-desing-resume::before {
   content: "";
   position: absolute;

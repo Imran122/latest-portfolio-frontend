@@ -32,5 +32,8 @@ module.exports = {
       "spin-slow": "spin 6s linear infinite",
     },
   },
-  plugins: [],
+  plugins: [
+    // other plugins
+    require("tailwindcss-filters"),
+  ],
 };
