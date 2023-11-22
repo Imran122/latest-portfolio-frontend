@@ -38,7 +38,7 @@ const PortfolioComponent = () => {
                 onClick={() => openModal()}
                 className="bg-[#000] text-white absolute bottom-6 ml-10 text-center text-xl hover:text-primary_colour border outline outline-2 p-3 rounded-xl"
               >
-                DETAILSz
+                DETAILS
               </button>
 
               <button
@@ -63,14 +63,14 @@ const PortfolioComponent = () => {
             <div className="flex gap-6 relative">
               <button
                 type="button"
-                className="bg-[#000] text-white absolute bottom-6 ml-10 text-center text-xl hover:text-primary_colour border outline outline-2 p-3 rounded-xl"
+                className="bg-[#000] cs-screen:text-sm text-white absolute bottom-6 ml-10 text-center text-xl hover:text-primary_colour border outline outline-2 p-3 rounded-xl"
               >
                 DETAILS
               </button>
 
               <button
                 type="button"
-                className="bg-[#000] text-white absolute bottom-6 ml-44 text-center text-xl hover:text-primary_colour border outline outline-2 p-3 rounded-xl"
+                className="bg-[#000] cs-screen:text-sm cs-screen:ml-36 text-white absolute bottom-6 ml-44 text-center text-xl hover:text-primary_colour border outline outline-2 p-3 rounded-xl"
               >
                 VISIT
               </button>
@@ -89,14 +89,14 @@ const PortfolioComponent = () => {
             <div className="flex gap-6 relative">
               <button
                 type="button"
-                className="bg-[#000] text-white absolute bottom-6 ml-10 text-center text-xl hover:text-primary_colour border outline outline-2 p-3 rounded-xl"
+                className="bg-[#000] cs-screen:text-sm text-white absolute bottom-6 ml-10 text-center text-xl hover:text-primary_colour border outline outline-2 p-3 rounded-xl"
               >
                 DETAILS
               </button>
 
               <button
                 type="button"
-                className="bg-[#000] text-white absolute bottom-6 ml-44 text-center text-xl hover:text-primary_colour border outline outline-2 p-3 rounded-xl"
+                className="bg-[#000] cs-screen:text-sm text-white absolute bottom-6 ml-44 cs-screen:ml-36 text-center text-xl hover:text-primary_colour border outline outline-2 p-3 rounded-xl"
               >
                 VISIT
               </button>
