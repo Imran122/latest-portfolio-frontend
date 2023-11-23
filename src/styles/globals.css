@@ -93,6 +93,10 @@ hr {
 }
 
 /* dom manupulation for opup open to make bg blur */
+/* transition-colors duration-300 group-hover:outline-primary_colour */
+.side-desing-resume {
+  position: relative;
+}
 
 .side-desing-resume::before {
   content: "";
@@ -104,13 +108,18 @@ hr {
   left: -30px;
   right: 115px;
   top: 5px;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
+
+  /* Apply styles when the group is hovered */
+}
+.group:hover .side-desing-resume::before {
+  background-color: var(--primary-colour);
 }
 .side-desing-resume::after {
   content: "";
   background: #333333;
   width: 2px;
-  height: 100%;
+  height: 400px;
   position: absolute;
   left: -25px;
   right: 115px;
@@ -127,7 +136,10 @@ hr {
   left: -30px;
   right: 115px;
   top: 155px;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
+}
+.group:hover .side-desing-resume2nd::before {
+  background-color: var(--primary-colour);
 }
 .side-desing-resume3rd::before {
   content: "";
@@ -139,7 +151,10 @@ hr {
   left: -30px;
   right: 115px;
   top: 295px;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
+}
+.group:hover .side-desing-resume3rd::before {
+  background-color: var(--primary-colour);
 }
 /* .side-desing-resume2nd::after {
   content: "";
@@ -173,7 +188,7 @@ hr {
     @apply text-white text-5xl font-light font-custom_intro_font;
   }
   .middle-body-skill-div {
-    @apply flex flex-col gap-2 py-16 px-0 justify-center items-center border border-text_colour hover:border-primary_colour rounded-[85px];
+    @apply flex flex-col gap-2 py-16 px-0 justify-center items-center text-center border border-text_colour hover:border-primary_colour rounded-[85px];
   }
   .middle-body-skill-h-text {
     @apply text-text_colour text-xl font-custom_subtitle_font font-medium uppercase mt-4 hover:text-primary_colour;
