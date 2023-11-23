@@ -38,47 +38,47 @@ const MySkills = () => {
           Back-end Tech :--
         </h4>
         <div className="grid lg:grid-cols-5 cs-screen:grid-cols-3 grid-cols-2  gap-8">
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back10} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">javascript</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back1} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">typescript</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back2} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">Node js</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back3} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">express Js</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back4} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">Docker</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back5} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">prisma</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back6} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">graphql</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back9} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">mongodb</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back11} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">postgresql</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back7} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">aws</h2>
           </div>
-          <div data-aos="flip-left" className="middle-body-skill-div">
+          <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back8} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">gcp</h2>
           </div>
