@@ -17,9 +17,9 @@ html {
   --custom-name-font: "Archivo Black", sans-serif;
   --custom-subtitle-font: "Merriweather Sans", sans-serif;
 }
-body {
+/* body {
   background-color: #212529;
-}
+} */
 *,
 *::after,
 *::before {
