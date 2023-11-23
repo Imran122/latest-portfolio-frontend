@@ -1,18 +1,8 @@
-import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { FaHandshake, FaHeadSideVirus } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { SiWebmoney } from "react-icons/si";
 const ServiceComponent = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 900, // Animation duration (in milliseconds)
-      delay: 300, // Delay between elements animations (in milliseconds)
-      offset: 100, // Offset (in pixels) from the original trigger point
-      easing: "ease-in-out",
-    });
-  }, []);
   return (
     <div id="service">
       {/*  service button */}

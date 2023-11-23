@@ -1,7 +1,6 @@
-import Aos from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { MdWorkHistory } from "react-icons/md";
 import project1 from "../../assets/images/portfolio/portfolio1.jpg";
 import PortfolioDetailsComponent from "./PortfolioDetailsComponent";
@@ -15,13 +14,7 @@ const PortfolioComponent = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-  useEffect(() => {
-    Aos.init({
-      duration: 700, // Animation duration (in milliseconds)
-      delay: 300, // Delay between elements animations (in milliseconds)
-      offset: 400, // Offset (in pixels) from the original trigger point
-    });
-  }, []);
+
   return (
     <div className="relative" id="portfolio">
       {/*  work history portfolio button */}

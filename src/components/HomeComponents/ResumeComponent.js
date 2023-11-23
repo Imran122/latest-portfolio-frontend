@@ -1,3 +1,4 @@
+import "aos/dist/aos.css";
 import { FaFileWord } from "react-icons/fa6";
 import { MdDoubleArrow } from "react-icons/md";
 const ResumeComponent = () => {
