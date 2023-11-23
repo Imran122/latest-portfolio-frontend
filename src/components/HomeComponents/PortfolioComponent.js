@@ -1,5 +1,7 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MdWorkHistory } from "react-icons/md";
 import project1 from "../../assets/images/portfolio/portfolio1.jpg";
 import PortfolioDetailsComponent from "./PortfolioDetailsComponent";
@@ -13,20 +15,39 @@ const PortfolioComponent = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+  useEffect(() => {
+    Aos.init({
+      duration: 700, // Animation duration (in milliseconds)
+      delay: 300, // Delay between elements animations (in milliseconds)
+      offset: 400, // Offset (in pixels) from the original trigger point
+    });
+  }, []);
   return (
     <div className="relative" id="portfolio">
       {/*  work history portfolio button */}
-      <div className="middle-body-buton mt-28">
+      <div
+        className="middle-body-buton mt-28"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <MdWorkHistory />
         <h4>PORTFOLIO</h4>
       </div>
 
       <div className="mt-16 mb-4">
-        <h3 className="middle-body-title mb-10">
+        <h3
+          className="middle-body-title mb-10"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           Featured <span className="text-primary_colour"> Projects</span>
         </h3>
         <div className="grid grid-cols-4 gap-8">
-          <div className="lg:col-span-4 col-span-4 group">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className="lg:col-span-4 col-span-4 group"
+          >
             <Image
               className="w-full h-96 rounded-3xl"
               src={project1}
@@ -54,7 +75,7 @@ const PortfolioComponent = () => {
             </h2>
           </div>
 
-          <div className="lg:col-span-2 col-span-4 group">
+          <div data-aos="fade-right" className="lg:col-span-2 col-span-4 group">
             <Image
               className="w-full h-96 rounded-3xl"
               src={project1}
@@ -80,7 +101,7 @@ const PortfolioComponent = () => {
             </h2>
           </div>
 
-          <div className="lg:col-span-2 col-span-4 group">
+          <div data-aos="fade-left" className="lg:col-span-2 col-span-4 group">
             <Image
               className="w-full h-96 rounded-3xl"
               src={project1}

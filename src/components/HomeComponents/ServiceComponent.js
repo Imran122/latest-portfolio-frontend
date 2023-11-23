@@ -1,12 +1,26 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { FaHandshake, FaHeadSideVirus } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { SiWebmoney } from "react-icons/si";
-
 const ServiceComponent = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 900, // Animation duration (in milliseconds)
+      delay: 300, // Delay between elements animations (in milliseconds)
+      offset: 100, // Offset (in pixels) from the original trigger point
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <div id="service">
       {/*  service button */}
-      <div className="middle-body-buton mt-28">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        className="middle-body-buton mt-28"
+      >
         <FaHandshake />
         <h4>SERVICES</h4>
       </div>
@@ -37,7 +51,11 @@ const ServiceComponent = () => {
             </div>
           </div>
           {/*  next div */}
-          <div className="group flex justify-between mt-2 items-center rounded-xl p-10 border border-text_colour hover:border-primary_colour">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            className="group flex justify-between mt-2 items-center rounded-xl p-10 border border-text_colour hover:border-primary_colour"
+          >
             <div className="flex flex-col mt-5 ">
               <h2 className="text-4xl font-custom_subtitle_font text-white transition-colors duration-300 group-hover:text-primary_colour">
                 Full-Stack Development
@@ -56,7 +74,11 @@ const ServiceComponent = () => {
             </div>
           </div>
           {/*  next div */}
-          <div className="group flex justify-between mt-2 items-center rounded-xl p-10 border border-text_colour hover:border-primary_colour">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            className="group flex justify-between mt-2 items-center rounded-xl p-10 border border-text_colour hover:border-primary_colour"
+          >
             <div className="flex flex-col mt-5 ">
               <h2 className="text-4xl font-custom_subtitle_font text-white transition-colors duration-300 group-hover:text-primary_colour">
                 UI/UX Design

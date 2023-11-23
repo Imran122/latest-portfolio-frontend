@@ -9,7 +9,7 @@ import { ImStackoverflow } from "react-icons/im";
 import profile from "../../assets/images/profileimg/profile2.jpg";
 const LeftSidebar = () => {
   return (
-    <div className=" flex flex-col text-center p-4">
+    <div className=" flex flex-col text-center p-4 ">
       <div className="items-center w-full">
         <div className="flex flex-col ">
           <h2 className="lg:text-3xl sm:text-2xl font-bold font-serif text-white ">

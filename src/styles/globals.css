@@ -119,13 +119,17 @@ hr {
   content: "";
   background: #333333;
   width: 2px;
-  height: 400px;
+  height: 150px;
   position: absolute;
   left: -25px;
   right: 115px;
   top: 5px;
   z-index: -1;
 }
+.side-desing-resume2nd {
+  position: relative;
+}
+
 .side-desing-resume2nd::before {
   content: "";
   position: absolute;
@@ -135,11 +139,26 @@ hr {
   border-radius: 50%;
   left: -30px;
   right: 115px;
-  top: 155px;
+  top: 10px;
   transition: background-color 0.3s ease;
+}
+.side-desing-resume2nd::after {
+  content: "";
+  background: #333333;
+  width: 2px;
+  height: 150px;
+  position: absolute;
+  left: -25px;
+  right: 115px;
+  top: 5px;
+  z-index: -1;
 }
 .group:hover .side-desing-resume2nd::before {
   background-color: var(--primary-colour);
+}
+
+.side-desing-resume3rd {
+  position: relative;
 }
 .side-desing-resume3rd::before {
   content: "";
@@ -150,8 +169,19 @@ hr {
   border-radius: 50%;
   left: -30px;
   right: 115px;
-  top: 295px;
+  top: 10px;
   transition: background-color 0.3s ease;
+}
+.side-desing-resume3rd::after {
+  content: "";
+  background: #333333;
+  width: 2px;
+  height: 110px;
+  position: absolute;
+  left: -25px;
+  right: 115px;
+  top: 5px;
+  z-index: -1;
 }
 .group:hover .side-desing-resume3rd::before {
   background-color: var(--primary-colour);

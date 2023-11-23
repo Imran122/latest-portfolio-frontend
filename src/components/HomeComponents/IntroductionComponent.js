@@ -1,9 +1,19 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
+import { useEffect } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import { FaArrowDown } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
 import projectimg from "../../assets/images/middle/round-text.png";
 const IntroductionComponent = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 700, // Animation duration (in milliseconds)
+      delay: 300, // Delay between elements animations (in milliseconds)
+      offset: 400, // Offset (in pixels) from the original trigger point
+    });
+  }, []);
   return (
     <div id="home">
       {/*  body button */}
@@ -17,7 +27,10 @@ const IntroductionComponent = () => {
         <div className="mt-16 ">
           <h2 className="md:text-7xl text-4xl uppercase font-custom-intro-font text-white font-normal leading-normal ">
             Hi, I AM{" "}
-            <span className="text-primary_colour font-custom_name_font font-bold ">
+            <span
+              data-aos="fade-down"
+              className="text-primary_colour font-custom_name_font font-bold "
+            >
               IMRAN HOSSAIN
             </span>
             ,
