@@ -1,7 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import { FaArrowDown } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
@@ -14,6 +14,36 @@ const IntroductionComponent = () => {
       offset: 400, // Offset (in pixels) from the original trigger point
     });
   }, []);
+  const [activeNavItem, setActiveNavItem] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const portfolioSection = document.getElementById("portfolio");
+
+      const isInViewport = (element, offsetPercentage = 0.4) => {
+        const rect = element.getBoundingClientRect();
+        const offset = rect.height * offsetPercentage;
+
+        return (
+          rect.top >= -offset &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) +
+              offset
+        );
+      };
+
+      if (isInViewport(portfolioSection)) {
+        setActiveNavItem("portfolio");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div id="home">
       {/*  body button */}
@@ -54,7 +84,9 @@ const IntroductionComponent = () => {
               alt="project-image"
             />
             <span className="absolute top-1/2  right-[30px] transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white">
-              <FaArrowDown />
+              <a href="#portfolio">
+                <FaArrowDown />
+              </a>
             </span>
           </div>
         </div>

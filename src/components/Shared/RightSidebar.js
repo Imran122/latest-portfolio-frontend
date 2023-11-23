@@ -56,7 +56,6 @@ const RightSidebar = () => {
     };
   }, []);
 
-  console.log("activeNavItem", activeNavItem);
   return (
     <div className="flex flex-col gap-3 items-center justify-center mt-5">
       <a
