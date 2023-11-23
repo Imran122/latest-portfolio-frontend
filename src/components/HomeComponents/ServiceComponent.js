@@ -2,7 +2,7 @@ import { CgWebsite } from "react-icons/cg";
 import { FaHandshake } from "react-icons/fa";
 const ServiceComponent = () => {
   return (
-    <div>
+    <div id="service">
       {/*  service button */}
       <div className="middle-body-buton mt-28">
         <FaHandshake />

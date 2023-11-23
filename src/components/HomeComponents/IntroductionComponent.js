@@ -5,7 +5,7 @@ import { IoHome } from "react-icons/io5";
 import projectimg from "../../assets/images/middle/round-text.png";
 const IntroductionComponent = () => {
   return (
-    <div>
+    <div id="home">
       {/*  body button */}
       <div className="middle-body-buton">
         <IoHome />

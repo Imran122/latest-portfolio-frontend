@@ -1,7 +1,7 @@
 import { SiGooglemessages } from "react-icons/si";
 const ContactComponent = () => {
   return (
-    <div>
+    <div id="contact">
       {/*  service button */}
       <div className="middle-body-buton mt-28">
         <SiGooglemessages />

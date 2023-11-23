@@ -1,7 +1,7 @@
 import { FaFileWord } from "react-icons/fa6";
 const ResumeComponent = () => {
   return (
-    <div>
+    <div id="resume">
       <div className="middle-body-buton mt-28">
         <FaFileWord />
         <h4>RESUME</h4>

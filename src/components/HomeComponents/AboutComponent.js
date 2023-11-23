@@ -1,7 +1,7 @@
 import { BsPersonCircle } from "react-icons/bs";
 const AboutComponent = () => {
   return (
-    <div>
+    <div id="about">
       {/*  body button */}
       <div className="middle-body-buton mt-28">
         <BsPersonCircle />

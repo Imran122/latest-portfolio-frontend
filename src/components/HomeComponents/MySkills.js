@@ -20,7 +20,7 @@ import front3 from "../../assets/images/skillslogo/redux.png";
 
 const MySkills = () => {
   return (
-    <div>
+    <div id="skills">
       {/*  service button */}
       <div className="middle-body-buton mt-28">
         <GiSkills />

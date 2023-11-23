@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bree+Serif&family=Merriweather+Sans:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Seymour+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bree+Serif&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Seymour+One&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --custom_button_color: #e25e3e;
   --secondary-colour: #565656;
@@ -149,6 +153,9 @@ hr {
   z-index: -1;
 } */
 /* css function  */
+.active {
+  color: var(--primary-colour); /* Set the desired color for the active link */
+}
 @layer components {
   .icon-design {
     @apply text-text_colour text-2xl border border-secondary_colour p-3 rounded-full hover:border hover:border-primary_colour hover:text-primary_colour;
