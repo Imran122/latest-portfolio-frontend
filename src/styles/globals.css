@@ -123,8 +123,7 @@ hr {
   position: absolute;
   left: -25px;
   right: 115px;
-  top: 5px;
-  z-index: -1;
+  top: 17px;
 }
 .side-desing-resume2nd {
   position: relative;
@@ -150,8 +149,7 @@ hr {
   position: absolute;
   left: -25px;
   right: 115px;
-  top: 5px;
-  z-index: -1;
+  top: 22px;
 }
 .group:hover .side-desing-resume2nd::before {
   background-color: var(--primary-colour);
@@ -180,8 +178,7 @@ hr {
   position: absolute;
   left: -25px;
   right: 115px;
-  top: 5px;
-  z-index: -1;
+  top: 25px;
 }
 .group:hover .side-desing-resume3rd::before {
   background-color: var(--primary-colour);

@@ -57,7 +57,7 @@ const RightSidebar = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-3 items-center justify-center mt-5">
+    <div className="flex flex-col gap-3 items-center justify-center ">
       <a
         href="#home"
         className={

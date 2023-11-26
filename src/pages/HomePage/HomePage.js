@@ -24,7 +24,7 @@ const HomePage = () => {
 
       {/*  <div className="lg:col-span-7 lg:max-w-6xl mx-auto border lg:mt-16 sm:mt-6 mt-6"> */}
       <div className="lg:col-span-7   lg:mt-16 sm:mt-6 mt-6">
-        <div className="w-full lg:px-36">
+        <div className="w-full lg:px-36 overflow-hidden">
           <IntroductionComponent></IntroductionComponent>
           <AboutComponent></AboutComponent>
           <ResumeComponent></ResumeComponent>
@@ -34,9 +34,14 @@ const HomePage = () => {
           <ContactComponent></ContactComponent>
         </div>
       </div>
-      <div className="lg:col-span-1 hidden lg:block border border-secondary_colour rounded-3xl lg:sticky lg:h-[450px] lg:w-24 lg:top-1/2 lg:-translate-y-1/2 lg:right-0">
-        <RightSidebar></RightSidebar>
+      <div className="lg:h-screen lg:col-span-1 lg:sticky lg:top-0 lg:flex items-center lg:right-0 hidden ">
+        <div className="border border-secondary_colour  rounded-full lg:right-0 py-4 w-24">
+          <RightSidebar></RightSidebar>
+        </div>
       </div>
+      {/*   <div className="lg:col-span-1  hidden lg:block border border-secondary_colour rounded-3xl lg:sticky lg:h-[450px] lg:w-24 lg:top-1/2 lg:-translate-y-1/2 lg:right-0">
+        <RightSidebar></RightSidebar>
+      </div> */}
     </div>
   );
 };

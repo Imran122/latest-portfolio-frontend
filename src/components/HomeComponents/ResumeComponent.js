@@ -21,7 +21,7 @@ const ResumeComponent = () => {
         >
           Education & <span className="text-primary_colour">Experience ✨</span>
         </h3>
-        <div className="mt-10 relative ml-7">
+        <div className="mt-10 relative lg:ml-7 ml-9">
           <div
             data-aos="fade-left"
             data-aos-offset="200"
