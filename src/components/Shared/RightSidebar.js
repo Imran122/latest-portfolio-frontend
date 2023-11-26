@@ -11,49 +11,51 @@ const RightSidebar = () => {
   const [activeNavItem, setActiveNavItem] = useState("home");
 
   useEffect(() => {
-    const handleScroll = () => {
-      const homeSection = document.getElementById("home");
-      const aboutSection = document.getElementById("about");
-      const resumeSection = document.getElementById("resume");
-      const serviceSection = document.getElementById("service");
-      const skillsSection = document.getElementById("skills");
-      const portfolioSection = document.getElementById("portfolio");
-      const contactlioSection = document.getElementById("contact");
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        const homeSection = document.getElementById("home");
+        const aboutSection = document.getElementById("about");
+        const resumeSection = document.getElementById("resume");
+        const serviceSection = document.getElementById("service");
+        const skillsSection = document.getElementById("skills");
+        const portfolioSection = document.getElementById("portfolio");
+        const contactlioSection = document.getElementById("contact");
 
-      const isInViewport = (element, offsetPercentage = 0.4) => {
-        const rect = element.getBoundingClientRect();
-        const offset = rect.height * offsetPercentage;
+        const isInViewport = (element, offsetPercentage = 0.4) => {
+          const rect = element.getBoundingClientRect();
+          const offset = rect.height * offsetPercentage;
 
-        return (
-          rect.top >= -offset &&
-          rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) +
-              offset
-        );
+          return (
+            rect.top >= -offset &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) +
+                offset
+          );
+        };
+
+        if (isInViewport(homeSection)) {
+          setActiveNavItem("home");
+        } else if (isInViewport(aboutSection)) {
+          setActiveNavItem("about");
+        } else if (isInViewport(resumeSection)) {
+          setActiveNavItem("resume");
+        } else if (isInViewport(serviceSection)) {
+          setActiveNavItem("service");
+        } else if (isInViewport(skillsSection)) {
+          setActiveNavItem("skills");
+        } else if (isInViewport(portfolioSection)) {
+          setActiveNavItem("portfolio");
+        } else if (isInViewport(contactlioSection)) {
+          setActiveNavItem("contact");
+        }
       };
 
-      if (isInViewport(homeSection)) {
-        setActiveNavItem("home");
-      } else if (isInViewport(aboutSection)) {
-        setActiveNavItem("about");
-      } else if (isInViewport(resumeSection)) {
-        setActiveNavItem("resume");
-      } else if (isInViewport(serviceSection)) {
-        setActiveNavItem("service");
-      } else if (isInViewport(skillsSection)) {
-        setActiveNavItem("skills");
-      } else if (isInViewport(portfolioSection)) {
-        setActiveNavItem("portfolio");
-      } else if (isInViewport(contactlioSection)) {
-        setActiveNavItem("contact");
-      }
-    };
+      window.addEventListener("scroll", handleScroll);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   return (

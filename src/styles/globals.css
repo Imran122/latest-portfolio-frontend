@@ -80,6 +80,12 @@ hr {
 /* dom manupulation for opup open to make bg blur */
 /* styles.css */
 
+/* ckeditor  styles.css */
+.ck-editor__editable {
+  min-height: 217px !important;
+  max-height: 800px !important;
+}
+
 .modal-open::before {
   content: "";
   position: fixed;

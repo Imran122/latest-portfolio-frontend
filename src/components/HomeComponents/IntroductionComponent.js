@@ -17,31 +17,33 @@ const IntroductionComponent = () => {
   const [activeNavItem, setActiveNavItem] = useState("");
 
   useEffect(() => {
-    const handleScroll = () => {
-      const portfolioSection = document.getElementById("portfolio");
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        const portfolioSection = document.getElementById("portfolio");
 
-      const isInViewport = (element, offsetPercentage = 0.4) => {
-        const rect = element.getBoundingClientRect();
-        const offset = rect.height * offsetPercentage;
+        const isInViewport = (element, offsetPercentage = 0.4) => {
+          const rect = element.getBoundingClientRect();
+          const offset = rect.height * offsetPercentage;
 
-        return (
-          rect.top >= -offset &&
-          rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) +
-              offset
-        );
+          return (
+            rect.top >= -offset &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) +
+                offset
+          );
+        };
+
+        if (isInViewport(portfolioSection)) {
+          setActiveNavItem("portfolio");
+        }
       };
 
-      if (isInViewport(portfolioSection)) {
-        setActiveNavItem("portfolio");
-      }
-    };
+      window.addEventListener("scroll", handleScroll);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   return (

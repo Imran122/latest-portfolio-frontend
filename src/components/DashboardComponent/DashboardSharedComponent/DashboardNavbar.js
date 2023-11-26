@@ -10,8 +10,8 @@ const DashboardNavbar = ({ open, setOpen, nav, setNav }) => {
     setNav(!nav);
   };
   return (
-    <div>
-      <div className=" w-full py-5 bg-white sticky top-0 z-10">
+    <div className="sticky top-0 z-10">
+      <div className=" w-full py-5 bg-white  ">
         <div className="flex justify-between">
           <div className="flex items-center w-2/4">
             <div className="px-4 flex">

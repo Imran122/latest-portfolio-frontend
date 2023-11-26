@@ -1,9 +1,17 @@
-import UploadProject from "@/components/DashboardComponent/DashboardComponents/UploadProjects/UploadProject";
-
+import dynamic from "next/dynamic";
 const index = () => {
+  const DynamicEditor = dynamic(
+    () =>
+      import(
+        "../../../components/DashboardComponent/DashboardComponents/UploadProjects/UploadProject.js"
+      ),
+    {
+      ssr: false,
+    }
+  );
   return (
     <div>
-      <UploadProject></UploadProject>
+      <DynamicEditor></DynamicEditor>
     </div>
   );
 };

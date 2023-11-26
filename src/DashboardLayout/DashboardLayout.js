@@ -9,7 +9,7 @@ const DashboardLayout = ({ children }) => {
     <>
       <div className="flex  ">
         {/* Sidebar (Fixed) */}
-        <div className="h-screen">
+        <div className="h-screen  sticky top-0 left-2 ">
           <DashboardSidebar
             open={open}
             setOpen={setOpen}
@@ -25,7 +25,7 @@ const DashboardLayout = ({ children }) => {
             nav={nav}
             setNav={setNav}
           />
-          <div className="bg-[#EFF2F5] h-screen">{children}</div>
+          <div className="bg-[#EFF2F5]">{children}</div>
         </div>
       </div>
     </>
