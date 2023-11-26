@@ -92,6 +92,23 @@ hr {
   backdrop-filter: blur(4px);
 }
 
+.slick-prev {
+  left: 2% !important;
+  z-index: 1;
+}
+
+.slick-prev::before {
+  color: var(--text-colour) !important;
+  font-size: 40px !important;
+}
+.slick-next::before {
+  color: var(--text-colour) !important;
+  font-size: 40px !important;
+}
+.slick-next {
+  right: 2% !important;
+  z-index: 1;
+}
 /* dom manupulation for opup open to make bg blur */
 /* transition-colors duration-300 group-hover:outline-primary_colour */
 .side-desing-resume {

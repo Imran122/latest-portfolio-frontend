@@ -7,9 +7,9 @@ const DashboardLayout = ({ children }) => {
   const [nav, setNav] = useState(false);
   return (
     <>
-      <div className="flex bg-[#EFF2F5] ">
+      <div className="flex  ">
         {/* Sidebar (Fixed) */}
-        <div className="h-screen bg-[#e4ecf5]">
+        <div className="h-screen">
           <DashboardSidebar
             open={open}
             setOpen={setOpen}
@@ -18,14 +18,14 @@ const DashboardLayout = ({ children }) => {
           />
         </div>
 
-        <div className="w-full">
+        <div className="w-full bg-[#EFF2F5]">
           <DashboardNavbar
             open={open}
             setOpen={setOpen}
             nav={nav}
             setNav={setNav}
           />
-          <div className="bg-[#EFF2F5]">{children}</div>
+          <div className="bg-[#EFF2F5] h-screen">{children}</div>
         </div>
       </div>
     </>

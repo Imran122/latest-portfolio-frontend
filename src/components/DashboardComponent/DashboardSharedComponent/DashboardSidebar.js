@@ -96,13 +96,15 @@ const DashboardSidebar = ({ children, open, setOpen, nav, setNav }) => {
               </div>
             </div>
 
-            <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
+            <Link
+              href="/dashboard/upload-project"
+              className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3"
+            >
               <h1 className="flex items-center">
                 <Image src={supplier} alt="" />
-                {!open && <span className="ml-2"> Supplier</span>}
+                {!open && <span className="ml-2"> Add Projects</span>}
               </h1>
-              {!open && <MdOutlineNavigateNext className="mr-2 text-xl" />}
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -172,18 +174,20 @@ const DashboardSidebar = ({ children, open, setOpen, nav, setNav }) => {
                   </Link>
                 </div>
               </div>
-              <button className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3">
+              <Link
+                href="/dashboard/upload-project"
+                className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3"
+              >
                 <h1 className="flex items-center">
                   <Image src={supplier} alt="" />
-                  <span className="ml-2"> Supplier</span>
+                  <span className="ml-2"> Add Projects</span>
                 </h1>
-                <MdOutlineNavigateNext className="mr-2 text-xl" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
 
-        <main>{children}</main>
+        {/* <main>{children}</main> */}
       </div>
     </div>
   );

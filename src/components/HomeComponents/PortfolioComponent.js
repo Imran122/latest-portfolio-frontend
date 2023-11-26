@@ -16,7 +16,7 @@ const PortfolioComponent = () => {
   };
 
   return (
-    <div className="relative overflow-hidden" id="portfolio">
+    <div className="relative " id="portfolio">
       {/*  work history portfolio button */}
       <div
         className="middle-body-buton mt-28"
