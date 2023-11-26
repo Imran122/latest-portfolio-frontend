@@ -105,6 +105,15 @@ const DashboardSidebar = ({ children, open, setOpen, nav, setNav }) => {
                 {!open && <span className="ml-2"> Add Projects</span>}
               </h1>
             </Link>
+            <Link
+              href="/dashboard/project-list"
+              className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3"
+            >
+              <h1 className="flex items-center">
+                <Image src={supplier} alt="" />
+                {!open && <span className="ml-2"> Projects List</span>}
+              </h1>
+            </Link>
           </div>
         </div>
 
@@ -181,6 +190,15 @@ const DashboardSidebar = ({ children, open, setOpen, nav, setNav }) => {
                 <h1 className="flex items-center">
                   <Image src={supplier} alt="" />
                   <span className="ml-2"> Add Projects</span>
+                </h1>
+              </Link>
+              <Link
+                href="/dashboard/project-list"
+                className="flex justify-between items-center hover:bg-secondary hover:text-secondary py-[15px] rounded-l-full pl-3"
+              >
+                <h1 className="flex items-center">
+                  <Image src={supplier} alt="" />
+                  <span className="ml-2">Projects List</span>
                 </h1>
               </Link>
             </div>
