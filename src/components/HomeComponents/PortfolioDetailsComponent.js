@@ -2,8 +2,9 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { ImCancelCircle } from "react-icons/im";
 import Slider from "react-slick";
-import portfolio1 from "../../assets/images/portfolio/portfolio1.jpg";
-import portfolio2 from "../../assets/images/portfolio/portfolio2.png";
+import portfolio1 from "../../assets/images/portfolio/template.png";
+import portfolio2 from "../../assets/images/portfolio/template2.png";
+import portfolio3 from "../../assets/images/portfolio/template3.png";
 
 /* customize the arrow of the slider  */
 
@@ -63,16 +64,16 @@ const PortfolioDetailsComponent = ({ isOpen, onClose }) => {
               </div>
               <div className="flex-auto w-64  text-left ">
                 <h2 className="text-white lg:text-4xl text-2xl font-custom_intro_font font-bold uppercase">
-                  title of the project
+                  Law Firm Management System
                 </h2>
                 <div>
                   <h4 className="text-white lg:text-2xl text-xl font-custom_subtitle_font font-semibold mt-4 uppercase">
-                    Front-End
+                    Front-End:-
                   </h4>
                   <ul className="list-disc mt-4 text-white">
-                    <li>python</li>
-                    <li>javascript</li>
-                    <li>javascript</li>
+                    <li>React js</li>
+                    <li>Bootstrap5</li>
+                    <li>Context API</li>
                   </ul>
                 </div>
                 <div>
@@ -80,30 +81,33 @@ const PortfolioDetailsComponent = ({ isOpen, onClose }) => {
                     Front-End
                   </h4>
                   <ul className="list-disc mt-4 text-white">
-                    <li>python</li>
                     <li>javascript</li>
-                    <li>javascript</li>
+                    <li>Node js</li>
+                    <li>Express js</li>
+                    <li>Node Mailer</li>
+                    <li>Stripe</li>
                   </ul>
                 </div>
                 <p className="text-white font-sans font-normal mt-4">
-                  story all about how, my life got flipped-turned upside down
-                  And like to take a minute just sit right therestory all about
-                  how, my life got flipped-turned upside down And like to take a
-                  minute just sit right therestory all about how, my life got
-                  flipped-turned upside down Andlike to take a minute just sit
-                  right therestory all about how, my life got flipped-turned
-                  upside down And like to take a minute just sit right
-                  therestory all about how, my life got flipped-turned upside
-                  down And like to take a minute just sit right therestory all
-                  about how, my life got flipped-turned upside down And like to
-                  take a minute just sit right therestory all about how, my life
-                  got flipped-turned upside down And like to take a minute just
-                  sit right there
+                  I am trying to build a law firm system application where there
+                  will be 4 roles like Super admin, admin, agent and member.
+                  Here super-admin can control everything in the
+                  application.Super admin can accept books or reject
+                  centent,make paid or free,create edit or delete package or
+                  send custom packages to user.Admin has some few features to
+                  control users and data.An agent is like a university or a law
+                  firm who can buy packages and under the agent all the student
+                  or people who will open account can read book or article. A
+                  member is like a single user who can read book by buying a
+                  package from the application,contribute content,edit,delte
+                  etc. Every role can contribuite content but it will not show
+                  untli the super admin accpet. * signup and you will get a mail
+                  to active account. after activation you can login*
                 </p>
               </div>
             </div>
             <div className="flex justify-between">
-              <p className="font-light text-text_colour">image 1 of 5</p>
+              <p className="font-light text-text_colour">image 1 of 3</p>
               <button onClick={onClose}>
                 <span className="font-bold text-white text-4xl">
                   <ImCancelCircle />
@@ -122,47 +126,108 @@ const PortfolioDetailsComponent = ({ isOpen, onClose }) => {
               </div>
               <div className="flex-auto w-64  text-left ">
                 <h2 className="text-white lg:text-4xl text-2xl font-custom_intro_font font-bold uppercase">
-                  title of the project
+                  Law Firm Management System
                 </h2>
                 <div>
                   <h4 className="text-white lg:text-2xl text-xl font-custom_subtitle_font font-semibold mt-4 uppercase">
-                    Front-End
+                    super admin credential:
                   </h4>
                   <ul className="list-disc mt-4 text-white">
-                    <li>python</li>
-                    <li>javascript</li>
-                    <li>javascript</li>
+                    <li>email: shadowvampire11@gmail.com</li>
+                    <li>password: 12345678</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="text-white text-2xl font-custom_subtitle_font font-semibold mt-4 uppercase">
-                    Front-End
+                    Member credential:
                   </h4>
                   <ul className="list-disc mt-4 text-white">
-                    <li>python</li>
-                    <li>javascript</li>
-                    <li>javascript</li>
+                    <li>email: mdimranhossain0066@gmail.com</li>
+                    <li>password: 12345678</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-white text-2xl font-custom_subtitle_font font-semibold mt-4 uppercase">
+                    Admin credential:
+                  </h4>
+                  <ul className="list-disc mt-4 text-white">
+                    <li>email: imranhossain122@gmail.com</li>
+                    <li>password: 12345678</li>
                   </ul>
                 </div>
                 <p className="text-white font-sans font-normal mt-4">
-                  story all about how, my life got flipped-turned upside down
-                  And like to take a minute just sit right therestory all about
-                  how, my life got flipped-turned upside down And like to take a
-                  minute just sit right therestory all about how, my life got
-                  flipped-turned upside down Andlike to take a minute just sit
-                  right therestory all about how, my life got flipped-turned
-                  upside down And like to take a minute just sit right
-                  therestory all about how, my life got flipped-turned upside
-                  down And like to take a minute just sit right therestory all
-                  about how, my life got flipped-turned upside down And like to
-                  take a minute just sit right therestory all about how, my life
-                  got flipped-turned upside down And like to take a minute just
-                  sit right there
+                  super admin can control all the system in application. He can
+                  accept or reject new contribution. Super admin can see all the
+                  article or books and can delete it is there is anything wrong
+                  with the content. He can control user, agent. Super admin can
+                  send custom Package and agent will get it and pay it and it is
+                  called custom package here. In super admin dashboard home
+                  page, he will see a summary of his role. Like he can see
+                  earning summary, contribution summary, top performer who
+                  contributed book best, recent uploaded books. He can also send
+                  message notification for the user.
                 </p>
               </div>
             </div>
             <div className="flex justify-between">
-              <p className="font-light text-text_colour">image 1 of 5</p>
+              <p className="font-light text-text_colour">image 2 of 3</p>
+              <button onClick={onClose}>
+                <span className="font-bold text-white text-4xl">
+                  <ImCancelCircle />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div className="">
+            <div className="flex flex-row p-2 gap-4 border-2 border-white-600 bg-[#212529]">
+              <div className="flex-auto w-32 ">
+                <Image
+                  className="w-full h-full"
+                  src={portfolio3}
+                  alt="portfolio image"
+                ></Image>
+              </div>
+              <div className="flex-auto w-64  text-left ">
+                <h2 className="text-white lg:text-4xl text-2xl font-custom_intro_font font-bold uppercase">
+                  Law Firm Management System
+                </h2>
+                <div>
+                  <h4 className="text-white lg:text-2xl text-xl font-custom_subtitle_font font-semibold mt-4 uppercase">
+                    Agent credential:
+                  </h4>
+                  <ul className="list-disc mt-4 text-white">
+                    <li>email: mdimranhossain0066@gmail.com</li>
+                    <li>password: 12345678</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-white text-2xl font-custom_subtitle_font font-semibold mt-4 uppercase">
+                    Editor credential:
+                  </h4>
+                  <ul className="list-disc mt-4 text-white">
+                    <li>email: imrankhan6554@gmail.com</li>
+                    <li>password: 12345678</li>
+                  </ul>
+                </div>
+                <p className="text-white font-sans font-normal mt-4">
+                  when a member(user) will login to his dashboard he can see a
+                  summary of his account. How many content he contributed,
+                  recent uploaded book, notification message from the admin or
+                  super admin.Agency is almost same as a member(user). But he
+                  has some extra role. An agency means he is a owner or a
+                  professor or a owner of an organization and under his agency
+                  there are are some students who will get free account to see
+                  the content in the website. That user will be normal user and
+                  they will be added by the agency user.In the super admin
+                  dashboard there is trash system and if super admin send any
+                  content into the trash then it will show in the trash page.
+                  From the trash page the super admin can delete the data
+                  permanently from the database.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-between">
+              <p className="font-light text-text_colour">image 3 of 3</p>
               <button onClick={onClose}>
                 <span className="font-bold text-white text-4xl">
                   <ImCancelCircle />

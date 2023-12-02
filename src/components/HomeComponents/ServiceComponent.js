@@ -25,13 +25,19 @@ const ServiceComponent = () => {
           <div className="flex justify-between mt-10 items-center rounded-xl p-10 border border-text_colour group hover:border-primary_colour">
             <div className="flex flex-col mt-5 ">
               <h2 className="text-4xl font-custom_subtitle_font text-white transition-colors duration-300 group-hover:text-primary_colour">
-                Website Design
+                Front-End Design & Development
               </h2>
               <p className="text-base text-text_colour font-sans mt-1">
-                I created digital products with unique ideas use Figma & Framer
+                I specialize in Front-End Design & Development with expertise in
+                Next.js, React.js, Redux, Bootstrap, Tailwind CSS. My passion
+                lies in crafting seamless and responsive web applications, with
+                state management using Redux, ensuring optimal performance.
+                Proficient in collaborative development workflows, I bring a
+                solid foundation in Agile methodologies and continuously stay
+                updated on industry trends.
               </p>
               <h3 className="text-white text-xl mt-4 transition-colors duration-300 group-hover:text-primary_colour">
-                24 projects
+                10+ projects
               </h3>
             </div>
             <div className="cs-screen:ml-6">
@@ -51,10 +57,16 @@ const ServiceComponent = () => {
                 Full-Stack Development
               </h2>
               <p className="text-base text-text_colour font-sans mt-1">
-                I created digital products with unique ideas use Figma & Framer
+                I specialize in Full-Stack Development, bringing expertise in
+                Node.js, Express.js,MongoDB,PostgreSQL and a range of tools like
+                Stripe, Mailgun, SendGrid, and Google Cloud. My proficiency
+                extends from server-side development to crafting dynamic,
+                user-centric front-end interfaces. With a track record of
+                building robust web applications, I offer a comprehensive skill
+                set that ensures end-to-end development excellence.
               </p>
               <h3 className="text-white text-xl mt-4 transition-colors duration-300 group-hover:text-primary_colour">
-                24 projects
+                7+ projects
               </h3>
             </div>
             <div className="cs-screen:ml-6">
@@ -77,7 +89,7 @@ const ServiceComponent = () => {
                 I created digital products with unique ideas use Figma & Framer
               </p>
               <h3 className="text-white text-xl mt-4 transition-colors duration-300 group-hover:text-primary_colour">
-                24 projects
+                2 projects
               </h3>
             </div>
             <div className="cs-screen:ml-6">

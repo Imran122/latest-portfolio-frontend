@@ -96,7 +96,7 @@ const IntroductionComponent = () => {
         <div className="uppercase flex mt-4 gap-36">
           <div className=" flex items-start flex-col">
             <h2 className="text-primary_colour text-6xl">
-              3
+              2
               <span className="text-primary_colour text-3xl ">
                 <AiOutlinePlus />
               </span>
@@ -105,7 +105,7 @@ const IntroductionComponent = () => {
           </div>
           <div className=" flex items-start flex-col">
             <h2 className="text-primary_colour text-6xl">
-              13
+              10
               <span className="text-primary_colour text-3xl ">
                 <AiOutlinePlus />
               </span>

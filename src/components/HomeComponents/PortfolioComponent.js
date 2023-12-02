@@ -2,7 +2,9 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 import { useState } from "react";
 import { MdWorkHistory } from "react-icons/md";
-import project1 from "../../assets/images/portfolio/portfolio1.jpg";
+import project3 from "../../assets/images/portfolio/portfolio1.jpg";
+import project2 from "../../assets/images/portfolio/portfolio2.png";
+import project1 from "../../assets/images/portfolio/template.png";
 import PortfolioDetailsComponent from "./PortfolioDetailsComponent";
 const PortfolioComponent = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -64,14 +66,14 @@ const PortfolioComponent = () => {
             </div>
 
             <h2 className="text-center text-2xl font-custom_subtitle_font text-white mt-3">
-              Car rental service system
+              Law Firm Management System
             </h2>
           </div>
 
           <div data-aos="fade-right" className="lg:col-span-2 col-span-4 group">
             <Image
               className="w-full h-96 rounded-3xl"
-              src={project1}
+              src={project2}
               alt="project image"
             ></Image>
             <div className="flex gap-6 relative">
@@ -97,7 +99,7 @@ const PortfolioComponent = () => {
           <div data-aos="fade-left" className="lg:col-span-2 col-span-4 group">
             <Image
               className="w-full h-96 rounded-3xl"
-              src={project1}
+              src={project3}
               alt="project image"
             ></Image>
             <div className="flex gap-6 relative">
@@ -116,7 +118,7 @@ const PortfolioComponent = () => {
               </button>
             </div>
             <h2 className="text-center text-2xl font-custom_subtitle_font text-white mt-3">
-              Car rental service system
+              IQ Test Exam
             </h2>
           </div>
         </div>
