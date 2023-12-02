@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 const index = () => {
   return (
-    <div className="p-8 mt-4">
+    <div className="p-8 mt-4 bg-[#EFF2F5]">
       <div className="-my-2 py-2 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 overflow-x-auto">
         <div className="align-middle inline-block w-full shadow  sm:rounded-lg border-b border-gray-200">
           <table className="min-w-full">
@@ -75,10 +76,10 @@ const index = () => {
                     {" "}
                     <MdDelete className="text-3xl font-bold mr-4" />
                   </button>
-                  <button>
+                  <Link href="/dashboard/edit-project-details">
                     {" "}
                     <FaEdit className="text-3xl font-bold" />
-                  </button>
+                  </Link>
                 </td>
                 <td className="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
                   <a
@@ -137,10 +138,10 @@ const index = () => {
                     {" "}
                     <MdDelete className="text-3xl font-bold mr-4" />
                   </button>
-                  <button>
+                  <Link href="/dashboard/edit-project-details">
                     {" "}
                     <FaEdit className="text-3xl font-bold" />
-                  </button>
+                  </Link>
                 </td>
                 <td className="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
                   <a
@@ -199,10 +200,10 @@ const index = () => {
                     {" "}
                     <MdDelete className="text-3xl font-bold mr-4" />
                   </button>
-                  <button>
+                  <Link href="/dashboard/edit-project-details">
                     {" "}
                     <FaEdit className="text-3xl font-bold" />
-                  </button>
+                  </Link>
                 </td>
                 <td className="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
                   <a

@@ -1,6 +1,6 @@
 const Dashboard = () => {
   return (
-    <div className="">
+    <div className="bg-[#EFF2F5]">
       <p>dashboard home</p>
     </div>
   );
