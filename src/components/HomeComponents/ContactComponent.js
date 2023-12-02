@@ -13,45 +13,51 @@ const ContactComponent = () => {
           Let`s Work <span className="text-primary_colour">Together !</span>
         </h3>
         <div className="grid lg:grid-cols-2 gap-4">
-          <div className="  flex flex-col mb-4 bg-none">
-            <label for="model" className="font-medium mb-2 text-text_colour">
+          <div className="  flex flex-col mb-4 bg-none ">
+            <label
+              htmlFor="model"
+              className="font-medium mb-2 text-text_colour"
+            >
               Name<span className="text-red-600">*</span>
             </label>
             <input
               type="text"
               placeholder="Enter Name..."
-              className="p-4 rounded-lg font-medium border bg-[#212529] border-gray-200 focus:ring-primary_colour focus:ring focus:text-white"
+              className="p-4 rounded-lg font-medium border  bg-[#212529] border-gray-200 focus:ring-primary_colour focus:ring focus:text-white "
             />
           </div>
           <div className="  flex flex-col mb-4 bg-none">
-            <label for="model" className="font-medium mb-2 text-text_colour">
+            <label
+              htmlFor="model"
+              className="font-medium mb-2 text-text_colour"
+            >
               Email<span className="text-red-600">*</span>
             </label>
             <input
               type="email"
               placeholder="Enter Email..."
-              className="p-4 rounded-lg font-medium border bg-[#212529] border-gray-200 focus:ring-primary_colour focus:ring focus:text-white"
+              className="p-4 rounded-lg font-medium border bg-[#212529] border-gray-200 focus:ring-primary_colour focus:ring focus:text-white "
             />
           </div>
         </div>
         <div className="  flex flex-col mb-4 bg-none">
-          <label for="model" className="font-medium mb-2 text-text_colour">
+          <label htmlFor="model" className="font-medium mb-2 text-text_colour">
             Subject<span className="text-red-600">*</span>
           </label>
           <input
             type="text"
             placeholder="Enter subject..."
-            className="p-4 rounded-lg font-medium border bg-[#212529] border-gray-200 focus:ring-primary_colour focus:ring focus:text-white"
+            className="p-4 rounded-lg font-medium border bg-[#212529] border-gray-200 focus:ring-primary_colour focus:ring focus:text-white "
           />
         </div>
         <div className="  flex flex-col mb-4 bg-none">
-          <label for="model" className="font-medium mb-2 text-text_colour">
+          <label htmlFor="model" className="font-medium mb-2 text-text_colour">
             Text<span className="text-red-600">*</span>
           </label>
           <textarea
             type="text"
-            placeholder="Enter Email..."
-            className="p-4 rounded-lg font-medium border bg-[#212529] border-gray-200 focus:ring-primary_colour focus:ring focus:text-white"
+            placeholder="Enter Text..."
+            className="p-4 rounded-lg font-medium border bg-[#212529] border-gray-200 focus:ring-primary_colour focus:ring focus:text-white "
           />
         </div>
 

@@ -13,6 +13,7 @@
     "@ckeditor/ckeditor5-react": "^6.2.0",
     "aos": "^3.0.0-beta.6",
     "next": "14.0.2",
+    "postcss-import": "^15.1.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
