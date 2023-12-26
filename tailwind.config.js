@@ -21,6 +21,7 @@ module.exports = {
       display: ["group-hover"],
       screens: {
         "cs-screen": [{ min: "1020px", max: "1420px" }],
+        "cs-screen-second": [{ min: "1421px", max: "1680px" }],
       },
       fontFamily: {
         custom_intro_font: "var(--custom-intro-font)",

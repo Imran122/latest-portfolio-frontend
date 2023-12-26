@@ -17,7 +17,7 @@ const HomePage = () => {
         </div>
       </div> */}
       <div className="lg:h-screen lg:col-span-2 lg:sticky lg:top-0 flex items-center lg:left-2">
-        <div className="border border-secondary_colour lg:w-full w-[500px] mx-auto rounded-xl">
+        <div className="border border-secondary_colour lg:w-full cs-screen:w-80 cs-screen-second:w-96 mx-auto rounded-xl">
           <LeftSidebar></LeftSidebar>
         </div>
       </div>

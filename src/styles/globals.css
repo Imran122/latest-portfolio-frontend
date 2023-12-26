@@ -21,7 +21,7 @@
     @apply text-white text-5xl font-light font-custom_intro_font;
   }
   .middle-body-skill-div {
-    @apply flex flex-col gap-2 py-16 px-0 justify-center items-center text-center border border-text_colour hover:border-primary_colour rounded-[85px];
+    @apply flex flex-col gap-2 py-6 px-4 justify-center items-center text-center border border-text_colour hover:border-primary_colour rounded-[65px];
   }
   .middle-body-skill-h-text {
     @apply text-text_colour text-xl font-custom_subtitle_font font-medium uppercase mt-4 hover:text-primary_colour;

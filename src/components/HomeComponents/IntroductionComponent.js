@@ -76,7 +76,7 @@ const IntroductionComponent = () => {
           </p>
         </div>
         {/*     project image rortaing deisgn */}
-        <div className="mt-24 relative text-center">
+        <div className="mt-24 relative text-center mr-3">
           <div className="flex items-center justify-end">
             {" "}
             {/* Use justify-end to align to the right */}
