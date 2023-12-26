@@ -1,7 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import { FaArrowDown } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
@@ -15,29 +15,28 @@ const IntroductionComponent = () => {
     });
   }, []);
   const [activeNavItem, setActiveNavItem] = useState("");
-  const [isSticky, setSticky] = useState(false);
-  const ref = useRef(null);
-  const handleScroll = () => {
-    const portfolioSection = document.getElementById("portfolio");
-   
-    const isInViewport = (element, offsetPercentage = 0.4) => {
-      if(!ref.current) return
-      if (ref.current.getBoundingClientRect().y <= -580 || null) {
-        console.log(ref.current.getBoundingClientRect().y);
 
-        setSticky(true);
-      } else {
-        setSticky(false);
-      }
-    };
-
-    if (isInViewport(portfolioSection)) {
-      setActiveNavItem("portfolio");
-    }
-  };
   useEffect(() => {
     if (typeof window !== "undefined") {
-  
+      const handleScroll = () => {
+        const portfolioSection = document.getElementById("portfolio");
+
+        const isInViewport = (element, offsetPercentage = 0.4) => {
+          const rect = element?.getBoundingClientRect();
+          const offset = rect?.height * offsetPercentage;
+
+          return (
+            rect?.top >= -offset &&
+            rect?.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) +
+                offset
+          );
+        };
+
+        if (isInViewport(portfolioSection)) {
+          setActiveNavItem("portfolio");
+        }
+      };
 
       window.addEventListener("scroll", handleScroll);
 
@@ -45,7 +44,7 @@ const IntroductionComponent = () => {
         window.removeEventListener("scroll", handleScroll);
       };
     }
-  }, [activeNavItem]);
+  }, []);
 
   return (
     <div id="home">
