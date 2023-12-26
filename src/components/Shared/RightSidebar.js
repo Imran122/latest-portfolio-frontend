@@ -22,12 +22,12 @@ const RightSidebar = () => {
         const contactlioSection = document.getElementById("contact");
 
         const isInViewport = (element, offsetPercentage = 0.4) => {
-          const rect = element.getBoundingClientRect();
-          const offset = rect.height * offsetPercentage;
+          const rect = element?.getBoundingClientRect();
+          const offset = rect?.height * offsetPercentage;
 
           return (
-            rect.top >= -offset &&
-            rect.bottom <=
+            rect?.top >= -offset &&
+            rect?.bottom <=
               (window.innerHeight || document.documentElement.clientHeight) +
                 offset
           );
