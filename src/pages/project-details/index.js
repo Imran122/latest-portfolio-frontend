@@ -1,8 +1,8 @@
 import ProjectDetailsComponentPage from "@/components/ProjectDetailsComponent/ProjectDetailsComponentPage";
 import LeftSidebar from "@/components/Shared/LeftSidebar";
-import RightSidebar from "@/components/Shared/RightSidebar";
 import RightSidebarDetailsPage from "@/components/Shared/RightSidebarDetailsPage";
-import React from "react";
+import Link from "next/link";
+import { FaHome } from "react-icons/fa";
 
 const ProjectDetails = () => {
   return (
@@ -13,8 +13,13 @@ const ProjectDetails = () => {
           </div>
         </div> */}
       <div className="lg:h-screen lg:col-span-2 lg:sticky lg:top-0 flex items-center lg:left-2">
-        <div className="border border-secondary_colour lg:w-full cs-screen:w-80 cs-screen-second:w-96 mx-auto rounded-xl">
+        <div className="border border-secondary_colour lg:w-full cs-screen:w-80 cs-screen-second:w-96 mx-auto rounded-xl relative">
           <LeftSidebar></LeftSidebar>
+          <div className="absolute md:hidden lg:block -right-5 -top-5 w-10 h-10 border border-primary_colour animate-spin-slow text-center p-2 text-2xl rounded-full text-purple-400">
+            <Link className="shadow-xl shadow-primary_colour" href="/">
+              <FaHome />
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -31,20 +36,17 @@ const ProjectDetails = () => {
         </div>
       </div> */}
 
-      <div className="lg:col-span-1 hidden lg:block   lg:fixed lg:py-2 lg:w-24 lg:top-28 lg:-translate-y-1/2 lg:right-3">
+      <div className="lg:h-screen lg:col-span-1 lg:sticky lg:top-0 lg:flex items-center lg:right-0 ">
         <RightSidebarDetailsPage></RightSidebarDetailsPage>
       </div>
-
-      {/*    mobile device er home button . hidden for large */}
-      <button className="lg:col-span-1 mt-4 mb-4 lg:hidden block group relative p-4 overflow-hidden rounded-3xl bg-white text-xl shadow w-full focus:outline-none">
-        <div className="absolute inset-0 w-3 bg-primary_colour transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-        <span className="relative text-black group-hover:text-white text-center">
-          HOME
-        </span>
-
-        <div className="absolute inset-0 rounded-3xl border-2 border-primary_colour pointer-events-none"></div>
-      </button>
-      {/*    mobile device er home button . hidden for large */}
+      <div className="mt-10  lg:hidden  w-full  border border-primary_colour text-center p-3 text-2xl rounded-xl text-purple-400">
+        <Link
+          className="shadow-xl shadow-primary_colour flex gap-4 justify-center items-center"
+          href="/"
+        >
+          HOME <FaHome />
+        </Link>
+      </div>
     </div>
   );
 };

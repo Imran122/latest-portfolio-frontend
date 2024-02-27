@@ -26,6 +26,9 @@
   .middle-body-skill-h-text {
     @apply text-text_colour text-xl font-custom_subtitle_font font-medium uppercase mt-4 hover:text-primary_colour;
   }
+  .details-page-icon-design {
+    @apply flex flex-col p-4 justify-center items-center text-center border border-primary_colour hover:border-teal-600 rounded-full;
+  }
 }
 
 html {
@@ -163,73 +166,56 @@ hr {
   border: none;
   cursor: pointer;
   font-size: xx-large;
-  
 }
 @media (min-width: 320px) {
   .custom-prev-arrow {
-   
     top: 14%;
     left: 0%;
     font-size: medium;
-  
   }
-  
+
   .custom-next-arrow {
-   
     top: 14%;
     right: 0%;
     font-size: medium;
   }
 }
-
 
 @media (min-width: 640px) {
   .custom-prev-arrow {
-   
     top: 10%;
     left: 0%;
     font-size: medium;
-  
   }
-  
+
   .custom-next-arrow {
-   
     top: 10%;
     right: 0%;
     font-size: medium;
   }
 }
 
-
-
-
 @media (min-width: 768px) {
   .custom-prev-arrow {
-   
     top: 20%;
     left: 0%;
-    font-size: x-large
-  
+    font-size: x-large;
   }
-  
+
   .custom-next-arrow {
-   
     top: 20%;
     right: 0%;
-    font-size: x-large
+    font-size: x-large;
   }
 }
 @media (min-width: 1024px) {
   .custom-prev-arrow {
-   
     top: 15%;
     left: 0%;
     font-size: x-large;
-  
   }
-  
+
   .custom-next-arrow {
-   
     top: 15%;
     right: 0%;
     font-size: x-large;
@@ -238,35 +224,29 @@ hr {
 
 @media (min-width: 1280px) {
   .custom-prev-arrow {
-   
     top: 22%;
     left: 0%;
-    font-size: xx-large
-  
+    font-size: xx-large;
   }
-  
+
   .custom-next-arrow {
-   
     top: 22%;
     right: 0%;
-    font-size: xx-large
+    font-size: xx-large;
   }
 }
 
 @media (min-width: 1536px) {
   .custom-prev-arrow {
-   
     top: 30%;
     left: 0%;
-    font-size: xx-large
-  
+    font-size: xx-large;
   }
-  
+
   .custom-next-arrow {
-   
     top: 30%;
     right: 0%;
-    font-size: xx-large
+    font-size: xx-large;
   }
 }
 /* custom arrow */
