@@ -46,7 +46,80 @@ const UploadProject = () => {
             </select>
           </div>
         </div>
+        {/* select tech that used in project */}
+        <div>
+          <h2 className=" text-2xl font-custom_subtitle_font font-black uppercase">
+            Front-End Tech Used In Project
+          </h2>
+          <div className="flex gap-2">
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
 
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+          </div>
+          <h2 className=" text-2xl font-custom_subtitle_font font-black uppercase">
+            Back-End Tech Used In Project
+          </h2>
+          <div className="flex gap-2">
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+            <div class="flex  items-start space-x-3 py-6">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <h1 class="text-gray-700 font-medium leading-none">React</h1>
+            </div>
+          </div>
+        </div>
+        {/* select tech that used in project */}
         {/*   image 1 with text write desing */}
         <div className="border ">
           <div className="mb-4 p-4 ">
