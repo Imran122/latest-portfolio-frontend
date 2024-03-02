@@ -21,15 +21,19 @@
     @apply text-white text-5xl font-light font-custom_intro_font;
   }
   .middle-body-skill-div {
-    @apply flex flex-col gap-2 py-16 px-0 justify-center items-center text-center border border-text_colour hover:border-primary_colour rounded-[85px];
+    @apply flex flex-col gap-2 py-6 px-4 justify-center items-center text-center border border-text_colour hover:border-primary_colour rounded-[65px];
   }
   .middle-body-skill-h-text {
     @apply text-text_colour text-xl font-custom_subtitle_font font-medium uppercase mt-4 hover:text-primary_colour;
+  }
+  .details-page-icon-design {
+    @apply flex flex-col p-4 justify-center items-center text-center border border-primary_colour hover:border-teal-600 rounded-full;
   }
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: #212529;
 }
 :root {
   --custom_button_color: #e25e3e;
@@ -138,7 +142,114 @@ hr {
   right: 2% !important;
   z-index: 1;
 }
-/* dom manupulation for opup open to make bg blur */
+
+/* custom arrow */
+.custom-prev-arrow {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  z-index: 9999;
+  color: var(--primary-colour);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+.custom-next-arrow {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  z-index: 9999;
+  color: var(--primary-colour);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: xx-large;
+}
+@media (min-width: 320px) {
+  .custom-prev-arrow {
+    top: 14%;
+    left: 0%;
+    font-size: medium;
+  }
+
+  .custom-next-arrow {
+    top: 14%;
+    right: 0%;
+    font-size: medium;
+  }
+}
+
+@media (min-width: 640px) {
+  .custom-prev-arrow {
+    top: 10%;
+    left: 0%;
+    font-size: medium;
+  }
+
+  .custom-next-arrow {
+    top: 10%;
+    right: 0%;
+    font-size: medium;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-prev-arrow {
+    top: 20%;
+    left: 0%;
+    font-size: x-large;
+  }
+
+  .custom-next-arrow {
+    top: 20%;
+    right: 0%;
+    font-size: x-large;
+  }
+}
+@media (min-width: 1024px) {
+  .custom-prev-arrow {
+    top: 15%;
+    left: 0%;
+    font-size: x-large;
+  }
+
+  .custom-next-arrow {
+    top: 15%;
+    right: 0%;
+    font-size: x-large;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-prev-arrow {
+    top: 22%;
+    left: 0%;
+    font-size: xx-large;
+  }
+
+  .custom-next-arrow {
+    top: 22%;
+    right: 0%;
+    font-size: xx-large;
+  }
+}
+
+@media (min-width: 1536px) {
+  .custom-prev-arrow {
+    top: 30%;
+    left: 0%;
+    font-size: xx-large;
+  }
+
+  .custom-next-arrow {
+    top: 30%;
+    right: 0%;
+    font-size: xx-large;
+  }
+}
+/* custom arrow */
 /* transition-colors duration-300 group-hover:outline-primary_colour */
 .side-desing-resume {
   position: relative;

@@ -37,7 +37,7 @@ const MySkills = () => {
         <h4 className="text-text_colour text-xl font-sans uppercase mb-8">
           Back-end Tech :--
         </h4>
-        <div className="grid lg:grid-cols-5 cs-screen:grid-cols-3 grid-cols-2  gap-8">
+        <div className="grid lg:grid-cols-5 cs-screen-second:grid-cols-4 cs-screen:grid-cols-3 grid-cols-2 md:grid-cols-3 gap-8">
           <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={back10} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">javascript</h2>
@@ -87,7 +87,7 @@ const MySkills = () => {
         <h4 className="text-text_colour text-xl font-sans uppercase mb-8 mt-8">
           front-end Tech :--
         </h4>
-        <div className="grid lg:grid-cols-5 cs-screen:grid-cols-3 grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-5 cs-screen:grid-cols-3 cs-screen-second:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-8">
           <div className="middle-body-skill-div">
             <Image className="w-20 h-30" src={front1} alt="skillimage"></Image>
             <h2 className="middle-body-skill-h-text">react js</h2>

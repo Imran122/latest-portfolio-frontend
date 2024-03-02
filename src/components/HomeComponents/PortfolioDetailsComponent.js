@@ -12,8 +12,8 @@ import portfolio3 from "../../assets/images/portfolio/template3.png";
 
 const PortfolioDetailsComponent = ({ isOpen, onClose }) => {
   const modalClass = isOpen
-    ? "absolute z-50  top-0 w-full left-0 justify-center items-center duration-700 opacity-100 scale-100 "
-    : " absolute top-0 opacity-0 scale-50 w-full left-0  justify-center items-center  duration-700";
+    ? "fixed z-50  top-1/2 w-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-700 opacity-100 scale-100 "
+    : " opacity-0 absolute top-1/2 w-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-50  duration-700";
 
   useEffect(() => {
     // Add a class to the body when the modal is open

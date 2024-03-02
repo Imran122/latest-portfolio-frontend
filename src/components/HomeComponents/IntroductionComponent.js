@@ -22,12 +22,12 @@ const IntroductionComponent = () => {
         const portfolioSection = document.getElementById("portfolio");
 
         const isInViewport = (element, offsetPercentage = 0.4) => {
-          const rect = element.getBoundingClientRect();
-          const offset = rect.height * offsetPercentage;
+          const rect = element?.getBoundingClientRect();
+          const offset = rect?.height * offsetPercentage;
 
           return (
-            rect.top >= -offset &&
-            rect.bottom <=
+            rect?.top >= -offset &&
+            rect?.bottom <=
               (window.innerHeight || document.documentElement.clientHeight) +
                 offset
           );
@@ -76,7 +76,7 @@ const IntroductionComponent = () => {
           </p>
         </div>
         {/*     project image rortaing deisgn */}
-        <div className="mt-24 relative text-center">
+        <div className="mt-24 relative text-center mr-3">
           <div className="flex items-center justify-end">
             {" "}
             {/* Use justify-end to align to the right */}
