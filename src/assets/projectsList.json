@@ -24,7 +24,7 @@
         "Node Mailer",
         "Stripe"
       ],
-      "description": "I am trying to build a law firm system application where there will be 4 roles like Super admin, admin, agent, and member. Here super-admin can control everything in the application..."
+      "description": "JWT and Auth) has implemented to signup and signin with email verification by mailgun.Used Node js, express js for backend and react js, bootstrap5 for frontend with stripe payment gateway integration.Role based control system and super admin can send custom payment request by mail(used mailgun)."
     },
     {
       "image": "https://i.ibb.co/bsQz7CS/template2.png",
@@ -56,7 +56,7 @@
     },
     {
       "image": "https://i.ibb.co/k6rmvmN/I-will-be-your-mern-stack-developer-or-react-website-front-end-developer1.webp",
-      "title": "Law Firm Management System",
+      "title": "Car Rental Management System",
       "frontend": ["React js", "Bootstrap5", "Context API"],
       "backend": [
         "javascript",
@@ -65,11 +65,11 @@
         "Node Mailer",
         "Stripe"
       ],
-      "description": "It is a car rental project. where there is 3 roles(super admin,Host,renter). The host can upload his car to give rent and the renter can search the car by location from the home page and take rent by making a payment. both will get a dashboard to control the rent-related work. Both can give the review to each other. Super admin can control both a renter and a host person. If the host uploads any car then the super admin will accept it and then it will show on the search result page or rent car page. if anyone wants to sell his car he can also sell his car on the site. For registration, I have used JWT token authentication with SendGrid to verify the mail address."
+      "description": "used SendGrid for auth with JWT token authentication.used google map to show search result car location.used stripe for payment gateway integration.used Node js, express js for backend and react js for frontend and Google cloud to store uploaded images from the site.Hosted in google cloud platform."
     },
     {
       "image": "https://i.ibb.co/VWwFQVd/portfolio2.png",
-      "title": "Law Firm Management System",
+      "title": "Car Rental Management System",
       "frontend": ["React js", "Bootstrap5", "Context API"],
       "backend": [
         "javascript",
@@ -78,7 +78,7 @@
         "Node Mailer",
         "Stripe"
       ],
-      "description": "It is a car rental project. where there is 3 roles(super admin,Host,renter). The host can upload his car to give rent and the renter can search the car by location from the home page and take rent by making a payment. both will get a dashboard to control the rent-related work. Both can give the review to each other. Super admin can control both a renter and a host person. If the host uploads any car then the super admin will accept it and then it will show on the search result page or rent car page. if anyone wants to sell his car he can also sell his car on the site. For registration, I have used JWT token authentication with SendGrid to verify the mail address."
+      "description": "A user can take rent by payment, a host can upload his car details for give rent. user can search car and can see various car in map result with car location and take rent by give time, address and personal information. Seller can sell his car. super admin has all control in his dashboard to accept car for rent or deny, suspend user ,check payment information and many more."
     }
   ]
 ]

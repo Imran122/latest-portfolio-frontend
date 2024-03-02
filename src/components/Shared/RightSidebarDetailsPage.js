@@ -2,7 +2,6 @@ import Image from "next/image";
 import reactjs from "../../assets/images/skillslogo/react js.png";
 import skillsimage from "../../assets/skillLogo.json";
 const RightSidebarDetailsPage = () => {
-  console.log("skillsimage ", skillsimage);
   return (
     <div className=" ">
       {/* <div className="flex flex-col gap-3 items-center justify-center animate-spin-slow">
@@ -49,9 +48,9 @@ const RightSidebarDetailsPage = () => {
           <div className="details-page-icon-design">
             <Image className="w-6 h-6" src={reactjs} alt="techimg" />
           </div>
-          <div className="details-page-icon-design">
+          {/* <div className="details-page-icon-design">
             <Image className="w-6 h-6" src={reactjs} alt="techimg" />
-          </div>
+          </div> */}
         </div>
         <h3 className="text-white font-semibold my-3">Back-End:-</h3>
         <div className="flex flex-wrap gap-2">
