@@ -1,13 +1,8 @@
-import React, { useState } from "react";
-import Image from "next/image";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import Slider from "react-slick";
-import { FaArrowAltCircleLeft } from "react-icons/fa";
-import { FaArrowAltCircleRight } from "react-icons/fa";
-
-import portfolio1 from "../../assets/images/portfolio/portfolio1.jpg";
-import portfolio2 from "../../assets/images/portfolio/template2.png";
-import portfolio3 from "../../assets/images/portfolio/template3.png";
-import { ImCancelCircle } from "react-icons/im";
+import projectsData from "../../assets/projectsList.json";
 
 const CustomPrevArrow = ({ onClick }) => (
   <div className="custom-prev-arrow" onClick={onClick}>
@@ -19,7 +14,7 @@ const CustomPrevArrow = ({ onClick }) => (
 const CustomNextArrow = ({ onClick }) => (
   <div className="custom-next-arrow" onClick={onClick}>
     {/* Your custom next arrow content or icon */}
-    <FaArrowAltCircleRight/>
+    <FaArrowAltCircleRight />
   </div>
 );
 
@@ -32,30 +27,12 @@ const ProjectDetailsComponentPage = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    
+
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
 
-  const projects = [
-    {
-      image: portfolio1,
-      title: "Law Firm Management System",
-      frontend: ["React js", "Bootstrap5", "Context API"],
-      backend: ["javascript", "Node js", "Express js", "Node Mailer", "Stripe"],
-      description:
-        "I am trying to build a law firm system application where there will be 4 roles like Super admin, admin, agent, and member. Here super-admin can control everything in the application...",
-    },
-    {
-      image: portfolio2,
-      title: "Law Firm Management System2",
-      frontend: ["React js", "Bootstrap5", "Context API"],
-      backend: ["javascript", "Node js", "Express js", "Node Mailer", "Stripe"],
-      description:
-        "content of a web page is loaded. Specifically, LCP measures the time from when the user initiates loading the page until the largest image or text block is rendered within the viewport.",
-    },
-    // Add other projects with their respective details
-  ];
+  const router = useRouter();
 
   return (
     <div className="bg-[#212529] ">
@@ -72,11 +49,13 @@ const ProjectDetailsComponentPage = () => {
       />
 
       <Slider {...settings}>
-        {projects.map((project, index) => (
+        {projectsData[router?.query?.slug]?.map((project, index) => (
           <div key={index}>
             <div className="flex-auto w-full mb-12">
-              <Image
+              <img
                 className="w-full h-full"
+                width="0"
+                height="0"
                 src={project.image}
                 alt={`portfolio image ${index + 1}`}
               />

@@ -1,0 +1,84 @@
+[
+  [
+    {
+      "image": "https://i.ibb.co/s9zjFf1/template.png",
+      "title": "Law Firm Management System",
+      "frontend": ["React js", "Bootstrap5", "Context API"],
+      "backend": [
+        "javascript",
+        "Node js",
+        "Express js",
+        "Node Mailer",
+        "Stripe"
+      ],
+      "description": "my goal was to build an application where a company can buy packages to get access to all the books and data based on packages. The company can give access to its user without payment. A single person also can buy packages to read all contributed data. Anyone can contribute here and the admin, and editor can edit or accept it. I developed the project with node js and react js and jwt token authentication with MongoDB and also used auth0 for authentication. I am trying to build a law firm system application where there will be 4 roles like Super admin, admin, agent, and member. Here super admin can control everything in the application. Admin has a few features to control users and data. An agent is like a university or a law firm that can buy packages and under the agent, all the students or people who will open an account can read books or articles. A member is like a single user who can read a book by buying a package from the application. It is a MERN stack project. Here in the world people always try to read articles, and books in their free time. Also, people want to share their thought through articles or books."
+    },
+    {
+      "image": "https://i.ibb.co/bsQz7CS/template2.png",
+      "title": "Law Firm Management System",
+      "frontend": ["React js", "Bootstrap5", "Context API"],
+      "backend": [
+        "javascript",
+        "Node js",
+        "Express js",
+        "Node Mailer",
+        "Stripe"
+      ],
+      "description": "I am trying to build a law firm system application where there will be 4 roles like Super admin, admin, agent, and member. Here super-admin can control everything in the application..."
+    },
+    {
+      "image": "https://i.ibb.co/bsQz7CS/template2.png",
+      "title": "Law Firm Management System",
+      "frontend": ["React js", "Bootstrap5", "Context API"],
+      "backend": [
+        "javascript",
+        "Node js",
+        "Express js",
+        "Node Mailer",
+        "Stripe"
+      ],
+      "description": "I am trying to build a law firm system application where there will be 4 roles like Super admin, admin, agent, and member. Here super-admin can control everything in the application..."
+    }
+  ],
+  [
+    {
+      "image": "https://i.ibb.co/R9Yfnzw/figma-gig-4.webp",
+      "title": "Car Rental Management System",
+      "frontend": ["React js", "Bootstrap5", "Context API"],
+      "backend": [
+        "javascript",
+        "Node js",
+        "Express js",
+        "Node Mailer",
+        "Stripe"
+      ],
+      "description": "It is a car rental project. where there is 3 roles(super admin,Host,renter). The host can upload his car to give rent and the renter can search the car by location from the home page and take rent by making a payment. both will get a dashboard to control the rent-related work. Both can give the review to each other. Super admin can control both a renter and a host person. If the host uploads any car then the super admin will accept it and then it will show on the search result page or rent car page. if anyone wants to sell his car he can also sell his car on the site. For registration, I have used JWT token authentication with SendGrid to verify the mail address."
+    },
+    {
+      "image": "https://i.ibb.co/k6rmvmN/I-will-be-your-mern-stack-developer-or-react-website-front-end-developer1.webp",
+      "title": "Law Firm Management System",
+      "frontend": ["React js", "Bootstrap5", "Context API"],
+      "backend": [
+        "javascript",
+        "Node js",
+        "Express js",
+        "Node Mailer",
+        "Stripe"
+      ],
+      "description": "It is a car rental project. where there is 3 roles(super admin,Host,renter). The host can upload his car to give rent and the renter can search the car by location from the home page and take rent by making a payment. both will get a dashboard to control the rent-related work. Both can give the review to each other. Super admin can control both a renter and a host person. If the host uploads any car then the super admin will accept it and then it will show on the search result page or rent car page. if anyone wants to sell his car he can also sell his car on the site. For registration, I have used JWT token authentication with SendGrid to verify the mail address."
+    },
+    {
+      "image": "https://i.ibb.co/VWwFQVd/portfolio2.png",
+      "title": "Law Firm Management System",
+      "frontend": ["React js", "Bootstrap5", "Context API"],
+      "backend": [
+        "javascript",
+        "Node js",
+        "Express js",
+        "Node Mailer",
+        "Stripe"
+      ],
+      "description": "It is a car rental project. where there is 3 roles(super admin,Host,renter). The host can upload his car to give rent and the renter can search the car by location from the home page and take rent by making a payment. both will get a dashboard to control the rent-related work. Both can give the review to each other. Super admin can control both a renter and a host person. If the host uploads any car then the super admin will accept it and then it will show on the search result page or rent car page. if anyone wants to sell his car he can also sell his car on the site. For registration, I have used JWT token authentication with SendGrid to verify the mail address."
+    }
+  ]
+]

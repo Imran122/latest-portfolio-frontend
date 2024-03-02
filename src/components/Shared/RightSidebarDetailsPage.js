@@ -1,6 +1,8 @@
 import Image from "next/image";
 import reactjs from "../../assets/images/skillslogo/react js.png";
+import skillsimage from "../../assets/skillLogo.json";
 const RightSidebarDetailsPage = () => {
+  console.log("skillsimage ", skillsimage);
   return (
     <div className=" ">
       {/* <div className="flex flex-col gap-3 items-center justify-center animate-spin-slow">
@@ -22,10 +24,24 @@ const RightSidebarDetailsPage = () => {
         <h3 className="text-white font-semibold my-3">Front-End:-</h3>
         <div className="flex flex-wrap gap-2">
           <div className="details-page-icon-design">
-            <Image className="w-6 h-6" src={reactjs} alt="techimg" />
+            <img
+              className="w-6 h-6"
+              src={
+                skillsimage[13].name === "Redux" ? skillsimage[13].picture : ""
+              }
+              alt="techimg"
+            />
           </div>
           <div className="details-page-icon-design">
-            <Image className="w-6 h-6" src={reactjs} alt="techimg" />
+            <img
+              className="w-6 h-6"
+              src={
+                skillsimage[1].name === "Bootstrap"
+                  ? skillsimage[1].picture
+                  : ""
+              }
+              alt="techimg"
+            />
           </div>
           <div className="details-page-icon-design">
             <Image className="w-6 h-6" src={reactjs} alt="techimg" />
@@ -40,16 +56,44 @@ const RightSidebarDetailsPage = () => {
         <h3 className="text-white font-semibold my-3">Back-End:-</h3>
         <div className="flex flex-wrap gap-2">
           <div className="details-page-icon-design">
-            <Image className="w-6 h-6" src={reactjs} alt="techimg" />
+            <img
+              className="w-6 h-6"
+              src={
+                skillsimage[3].name === "Express js"
+                  ? skillsimage[3].picture
+                  : ""
+              }
+              alt="techimg"
+            />
           </div>
           <div className="details-page-icon-design">
-            <Image className="w-6 h-6" src={reactjs} alt="techimg" />
+            <img
+              className="w-6 h-6"
+              src={
+                skillsimage[4].name === "Google CLoud"
+                  ? skillsimage[4].picture
+                  : ""
+              }
+              alt="techimg"
+            />
           </div>
           <div className="details-page-icon-design">
-            <Image className="w-6 h-6" src={reactjs} alt="techimg" />
+            <img
+              className="w-6 h-6"
+              src={
+                skillsimage[7].name === "MongoDB" ? skillsimage[7].picture : ""
+              }
+              alt="techimg"
+            />
           </div>
           <div className="details-page-icon-design">
-            <Image className="w-6 h-6" src={reactjs} alt="techimg" />
+            <img
+              className="w-6 h-6"
+              src={
+                skillsimage[9].name === "Node Js" ? skillsimage[9].picture : ""
+              }
+              alt="techimg"
+            />
           </div>
         </div>
       </div>

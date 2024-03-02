@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "65e29ffb5a9fd664f5b9d51a",
+    "picture": "https://i.ibb.co/S5RThVC/aws.png",
+    "name": "AWS"
+  },
+  {
+    "_id": "65e29ffba64fed7fb0ee141a",
+    "picture": "https://i.ibb.co/ZxznM6s/bootstrap.png",
+    "name": "Bootstrap"
+  },
+  {
+    "_id": "65e29ffb0b0aaefe8abca451",
+    "picture": "https://i.ibb.co/RNxPJrJ/docker.png",
+    "name": "Docker"
+  },
+  {
+    "_id": "65e29ffbf88fbd1d3d48ff23",
+    "picture": "https://i.ibb.co/Wvmh6fm/express.png",
+    "name": "Express js"
+  },
+  {
+    "_id": "65e29ffb98a5eb6166e4bbbb",
+    "picture": "https://i.ibb.co/vYjmXBM/gcp.png",
+    "name": "Google CLoud"
+  },
+  {
+    "_id": "65e29ffb8fe781f4cf4d26d8",
+    "picture": "https://i.ibb.co/3h2P7M2/graphql.png",
+    "name": "GraphQL"
+  },
+  {
+    "_id": "65e29ffb905a2cfed1f21aac",
+    "picture": "https://i.ibb.co/VYdYtHG/javascript.png",
+    "name": "Javascript"
+  },
+  {
+    "_id": "65e29ffbf7ee94aac2b38ffc",
+    "picture": "https://i.ibb.co/N1n0BvL/mongo.png",
+    "name": "MongoDB"
+  },
+  {
+    "_id": "65e29ffbd596e75278e6f7f5",
+    "picture": "https://i.ibb.co/sPW2xq6/nextjs.png",
+    "name": "Next Js"
+  },
+  {
+    "_id": "65e29ffbe7d37ef1c870f76e",
+    "picture": "https://i.ibb.co/tZTddVy/nodejs.png",
+    "name": "Node Js"
+  },
+  {
+    "_id": "65e29ffbd3592868029d0a02",
+    "picture": "https://i.ibb.co/NrPfVbB/postgresql.png",
+    "name": "PostgreSQL"
+  },
+  {
+    "_id": "65e29ffb709570083589bd73",
+    "picture": "https://i.ibb.co/LzLCfff/prisma.png",
+    "name": "Prisma"
+  },
+  {
+    "_id": "65e29ffba20c10cb41c3f52f",
+    "picture": "https://i.ibb.co/YbBhb3N/react-js.png",
+    "name": "React Js"
+  },
+  {
+    "_id": "65e29ffbcecd4e25b403ff1b",
+    "picture": "https://i.ibb.co/yV8tghs/redux.png",
+    "name": "Redux"
+  },
+  {
+    "_id": "65e29ffb738457779172ee45",
+    "picture": "https://i.ibb.co/rwgBbBH/Tailwind-img.png",
+    "name": "Tailwind CSS"
+  },
+  {
+    "_id": "65e29ffbf408e6b18c22585b",
+    "picture": "https://i.ibb.co/Hp6dP4z/tpescript.png",
+    "name": "Typescript"
+  }
+]
