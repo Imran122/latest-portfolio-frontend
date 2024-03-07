@@ -9,7 +9,7 @@ import { ImStackoverflow } from "react-icons/im";
 import profile from "../../assets/images/profileimg/profile2.jpg";
 const LeftSidebar = () => {
   return (
-    <div className=" flex flex-col text-center p-4 ">
+    <div className=" lg:flex flex-col  text-center p-4 ">
       <div className="items-center w-full">
         <div className="flex flex-col ">
           <h2 className="lg:text-2xl sm:text-xl font-bold font-serif text-white ">
@@ -38,7 +38,7 @@ const LeftSidebar = () => {
           uttara, Dhaka, Bangladesh
         </h3>
         <p className="lg:text-sm sm:text-xs cs-screen:text-[12px] font-serif font-medium text-white text-center mt-1">
-          @ 2023 IMRAN. All Rights Reserved
+          @ 2024 IMRAN. All Rights Reserved
         </p>
       </div>
       {/*  icon-design css calss is a resuable css it is in global css */}
