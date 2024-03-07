@@ -55,7 +55,7 @@ const IntroductionComponent = () => {
       </div>
 
       {/*    introduction text design */}
-      <div className="flex flex-col ">
+      <div className="flex flex-col pr-3">
         <div className="mt-16 ">
           <h2 className="md:text-5xl text-4xl uppercase font-custom-intro-font text-white font-normal leading-normal ">
             Hi, I AM{" "}

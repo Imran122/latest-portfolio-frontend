@@ -14,7 +14,7 @@ const ServiceComponent = () => {
         <h4>SERVICES</h4>
       </div>
 
-      <div className="mt-10 mb-4">
+      <div className="mt-10 mb-4 pr-3">
         <h3 className="middle-body-title">
           My <span className="text-primary_colour">Specializations</span>
         </h3>
@@ -36,7 +36,7 @@ const ServiceComponent = () => {
                 updated on industry trends.
               </p>
               <h3 className="text-white text-xl mt-4 transition-colors duration-300 group-hover:text-primary_colour">
-                10+ projects
+                14+ projects
               </h3>
             </div>
             <div className="cs-screen:ml-6">
@@ -58,14 +58,14 @@ const ServiceComponent = () => {
               <p className="text-base text-justify text-text_colour font-sans mt-1">
                 I specialize in Full-Stack Development, bringing expertise in
                 Node.js, Express.js,MongoDB,PostgreSQL and a range of tools like
-                Stripe, Mailgun, SendGrid, and Google Cloud. My proficiency
-                extends from server-side development to crafting dynamic,
-                user-centric front-end interfaces. With a track record of
-                building robust web applications, I offer a comprehensive skill
-                set that ensures end-to-end development excellence.
+                Stripe, Mailgun, SendGrid, and Google Cloud. Also Have
+                proficiency in react js, next js, redux with user-centric
+                front-end interfaces. With a track record of building robust web
+                applications, I offer a comprehensive skill set that ensures
+                end-to-end development excellence.
               </p>
               <h3 className="text-white text-xl mt-4 transition-colors duration-300 group-hover:text-primary_colour">
-                7+ projects
+                10+ projects
               </h3>
             </div>
             <div className="cs-screen:ml-6">

@@ -74,7 +74,7 @@ const PortfolioComponent = () => {
               alt="project image"
             ></Image>
             <div className="flex gap-6 relative">
-              <div className="absolute bottom-6 ml-10 flex gap-4">
+              <div className="absolute bottom-6 ml-6 flex gap-4">
                 <button
                   type="button"
                   onClick={() => openModal()}
@@ -146,8 +146,8 @@ const PortfolioComponent = () => {
               src={project3}
               alt="project image"
             ></Image>
-            <div className="flex gap-6 relative">
-              <div className="absolute bottom-6 md:ml-10 lg:flex gap-4 ml-2 cs-screen-second:flex cs-screen-second:flex-col-reverse cs-screen:flex-col-reverse">
+            <div className="flex  relative">
+              <div className="absolute bottom-6 md:ml-10 lg:flex gap-4 ml-4 cs-screen-second:flex cs-screen-second:flex-col-reverse cs-screen:flex-col-reverse">
                 {/* <button
                   type="button"
                   onClick={() => openModal()}

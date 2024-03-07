@@ -9,7 +9,7 @@ const AboutComponent = () => {
       </div>
 
       {/*   title of the div */}
-      <div className="mt-16">
+      <div className="mt-16 pr-3">
         <h3 className="middle-body-title">
           Unlocking Digital{" "}
           <span className="text-primary_colour"> Dreams 🚀</span> | Crafting

@@ -9,7 +9,6 @@ import LeftSidebar from "@/components/Shared/LeftSidebar";
 import RightSidebar from "@/components/Shared/RightSidebar";
 
 const HomePage = () => {
-  
   return (
     <div className="grid lg:grid-cols-10 px-3 lg:px-0 gap-8 ">
       {/* <div className="relative">
