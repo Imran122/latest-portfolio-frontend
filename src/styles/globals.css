@@ -15,16 +15,16 @@
     @apply text-text_colour text-xl border border-secondary_colour p-2 rounded-full hover:border hover:border-primary_colour hover:text-primary_colour;
   }
   .middle-body-buton {
-    @apply border text-text_colour border-text_colour gap-2 items-center px-4 py-2 rounded-full mt-4 w-auto inline-flex;
+    @apply border text-text_colour border-text_colour gap-2 items-center px-4 py-2 rounded-full  w-auto inline-flex;
   }
   .middle-body-title {
     @apply text-white text-5xl font-light font-custom_intro_font;
   }
   .middle-body-skill-div {
-    @apply flex flex-col gap-2 py-6 px-4 justify-center items-center text-center border border-text_colour hover:border-primary_colour rounded-[65px];
+    @apply flex flex-col gap-2 w-24 h-24 justify-center items-center text-center border border-text_colour hover:border-primary_colour rounded-full;
   }
   .middle-body-skill-h-text {
-    @apply text-text_colour text-xl font-custom_subtitle_font font-medium uppercase mt-4 hover:text-primary_colour;
+    @apply text-text_colour text-sm font-custom_subtitle_font font-light mt-1 hover:text-primary_colour;
   }
   .details-page-icon-design {
     @apply flex flex-col p-4 justify-center items-center text-center border border-primary_colour hover:border-teal-600 rounded-full;
@@ -74,9 +74,7 @@ a:focus {
 button:focus,
 input:focus,
 textarea:focus,
-button,
-input,
-textarea {
+button {
   outline: 0;
   border: 0;
 }

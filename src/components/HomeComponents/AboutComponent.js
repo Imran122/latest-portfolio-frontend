@@ -17,7 +17,7 @@ const AboutComponent = () => {
           <span className="text-primary_colour"> Magic ✨</span> | Let`s Make
           Your Ideas <span className="text-primary_colour"> Soar 🚀</span>
         </h3>
-        <p className="text-text_colour font-sans text-base mt-4 lg:pr-60 cs-screen:pr-0 pr-0 text-justify">
+        <p className="text-text_colour font-sans text-lg mt-4 lg:pr-60 cs-screen:pr-0 pr-0 text-justify">
           I specialize in creating tailored web applications using TypeScript,
           React js, Next js, Node js, Express js,MongoDB, and postgreSQL. My
           focus is understanding client`s unique requirement and collaborating

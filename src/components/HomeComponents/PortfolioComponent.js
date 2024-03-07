@@ -27,7 +27,7 @@ const PortfolioComponent = () => {
     <div className="relative " id="portfolio">
       {/*  work history portfolio button */}
       <div
-        className="middle-body-buton mt-28"
+        className="middle-body-buton mt-20"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
       >
