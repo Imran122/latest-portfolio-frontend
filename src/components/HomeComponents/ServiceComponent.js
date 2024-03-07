@@ -14,19 +14,19 @@ const ServiceComponent = () => {
         <h4>SERVICES</h4>
       </div>
 
-      <div className="mt-16 mb-4">
+      <div className="mt-10 mb-4 pr-3">
         <h3 className="middle-body-title">
           My <span className="text-primary_colour">Specializations</span>
         </h3>
 
         {/*  skill design div */}
         <div>
-          <div className="flex justify-between mt-10 items-center rounded-xl p-10 border border-text_colour group hover:border-primary_colour">
+          <div className="flex gap-10 justify-between mt-10 items-center rounded-xl p-10 border border-text_colour group hover:border-primary_colour">
             <div className="flex flex-col mt-5 ">
               <h2 className="text-4xl font-custom_subtitle_font text-white transition-colors duration-300 group-hover:text-primary_colour">
                 Front-End Development
               </h2>
-              <p className="text-base text-text_colour font-sans mt-1">
+              <p className="text-base text-text_colour text-justify font-sans mt-1">
                 I specialize in Front-End Design & Development with expertise in
                 Next.js, React.js, Redux, Bootstrap, Tailwind CSS. My passion
                 lies in crafting seamless and responsive web applications, with
@@ -36,7 +36,7 @@ const ServiceComponent = () => {
                 updated on industry trends.
               </p>
               <h3 className="text-white text-xl mt-4 transition-colors duration-300 group-hover:text-primary_colour">
-                10+ projects
+                14+ projects
               </h3>
             </div>
             <div className="cs-screen:ml-6">
@@ -49,23 +49,23 @@ const ServiceComponent = () => {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="bottom-bottom"
-            className="group flex justify-between mt-2 items-center rounded-xl p-10 border border-text_colour hover:border-primary_colour"
+            className="group flex gap-10 justify-between mt-2 items-center rounded-xl p-10 border border-text_colour hover:border-primary_colour"
           >
             <div className="flex flex-col mt-5 ">
               <h2 className="text-4xl font-custom_subtitle_font text-white transition-colors duration-300 group-hover:text-primary_colour">
                 Full-Stack Development
               </h2>
-              <p className="text-base text-text_colour font-sans mt-1">
+              <p className="text-base text-justify text-text_colour font-sans mt-1">
                 I specialize in Full-Stack Development, bringing expertise in
                 Node.js, Express.js,MongoDB,PostgreSQL and a range of tools like
-                Stripe, Mailgun, SendGrid, and Google Cloud. My proficiency
-                extends from server-side development to crafting dynamic,
-                user-centric front-end interfaces. With a track record of
-                building robust web applications, I offer a comprehensive skill
-                set that ensures end-to-end development excellence.
+                Stripe, Mailgun, SendGrid, and Google Cloud. Also Have
+                proficiency in react js, next js, redux with user-centric
+                front-end interfaces. With a track record of building robust web
+                applications, I offer a comprehensive skill set that ensures
+                end-to-end development excellence.
               </p>
               <h3 className="text-white text-xl mt-4 transition-colors duration-300 group-hover:text-primary_colour">
-                7+ projects
+                10+ projects
               </h3>
             </div>
             <div className="cs-screen:ml-6">

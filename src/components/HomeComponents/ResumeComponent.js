@@ -1,4 +1,6 @@
 import "aos/dist/aos.css";
+import Link from "next/link";
+import { FaDownload } from "react-icons/fa";
 import { FaFileWord } from "react-icons/fa6";
 import { MdDoubleArrow } from "react-icons/md";
 const ResumeComponent = () => {
@@ -7,12 +9,22 @@ const ResumeComponent = () => {
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
-        className="middle-body-buton mt-28"
+        className="flex gap-4  mt-14 justify-start items-center"
       >
-        <FaFileWord />
-        <h4>RESUME</h4>
+        <div className="middle-body-buton ">
+          <h4 className="flex gap-2 justify-center items-center">
+            <FaFileWord />
+            RESUME
+          </h4>
+        </div>
+        <Link
+          href="https://drive.google.com/file/d/1YVRqzwKKr2OR0H1PcVscF75fmbGreWUh/view"
+          className="text-4xl text-primary_colour"
+          target="_blank"
+        >
+          <FaDownload />
+        </Link>
       </div>
-
       <div className="mt-16 mb-4">
         <h3
           data-aos="fade-up"
@@ -57,7 +69,7 @@ const ResumeComponent = () => {
           >
             <div className="mt-10 side-desing-resume2nd">
               <h5 className="text-white flex gap-2 items-center text-xl font-custom_intro_font transition-colors duration-300 group-hover:text-primary_colour">
-                Nov-2020 <MdDoubleArrow /> Present
+                April-2022 <MdDoubleArrow /> Present
               </h5>
 
               <h3 className="text-white text-2xl font-custom_intro_font mt-5">

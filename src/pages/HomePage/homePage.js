@@ -5,24 +5,55 @@ import MySkills from "@/components/HomeComponents/MySkills";
 import PortfolioComponent from "@/components/HomeComponents/PortfolioComponent";
 import ResumeComponent from "@/components/HomeComponents/ResumeComponent";
 import ServiceComponent from "@/components/HomeComponents/ServiceComponent";
-import LeftSidebar from "@/components/Shared/LeftSidebar";
 import RightSidebar from "@/components/Shared/RightSidebar";
+import React, { useEffect, useState } from "react";
 
 const HomePage = () => {
-  
+  const [isMobile, setIsMobile] = useState(false);
+  const LeftSidebar = React.lazy(() =>
+    import("@/components/Shared/LeftSidebar")
+  );
+  const LeftSideBarTab = React.lazy(() =>
+    import("@/components/Shared/LeftSideBarTab")
+  );
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth >= 768 && window.innerWidth <= 1023);
+    };
+
+    // Set initial state on component mount
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="grid lg:grid-cols-10 px-3 lg:px-0 gap-8 ">
-      {/* <div className="relative">
-        <div className="lg:col-span-3 border border-secondary_colour rounded-sm lg:sticky lg:h-[840px] lg:top-1/2 lg:-translate-y-1/2 lg:left-2">
-          <LeftSidebar></LeftSidebar>
-        </div>
-      </div> */}
-      <div className="lg:h-screen lg:col-span-2 lg:sticky lg:top-0 flex items-center lg:left-2">
+      {/* previous design without tab */}
+      {/*  <div className="lg:h-screen lg:col-span-2  lg:sticky lg:top-0 flex items-center lg:left-2">
         <div className="border border-secondary_colour lg:w-full cs-screen:w-80 cs-screen-second:w-96 mx-auto rounded-xl">
-          <LeftSidebar></LeftSidebar>
+          <React.Suspense fallback={<div>Loading...</div>}>
+            {isMobile ? <LeftSideBarTab /> : <LeftSidebar />}
+          </React.Suspense>
         </div>
       </div>
-
+ */}
+      <React.Suspense fallback={<div>Loading...</div>}>
+        {isMobile ? (
+          <LeftSideBarTab />
+        ) : (
+          <div className="lg:h-screen lg:col-span-2  lg:sticky lg:top-0 flex items-center lg:left-2">
+            <div className="border border-secondary_colour lg:w-full cs-screen:w-80 cs-screen-second:w-96 mx-auto rounded-xl">
+              <LeftSidebar />
+            </div>
+          </div>
+        )}
+      </React.Suspense>
       {/*  <div className="lg:col-span-7 lg:max-w-6xl mx-auto border lg:mt-16 sm:mt-6 mt-6"> */}
       <div className="lg:col-span-7   lg:mt-16 sm:mt-6 mt-6">
         <div className="w-full lg:px-36 overflow-hidden">

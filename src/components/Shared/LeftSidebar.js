@@ -9,10 +9,10 @@ import { ImStackoverflow } from "react-icons/im";
 import profile from "../../assets/images/profileimg/profile2.jpg";
 const LeftSidebar = () => {
   return (
-    <div className=" flex flex-col text-center p-4 ">
+    <div className=" lg:flex flex-col  text-center p-4 ">
       <div className="items-center w-full">
         <div className="flex flex-col ">
-          <h2 className="lg:text-3xl sm:text-2xl font-bold font-serif text-white ">
+          <h2 className="lg:text-2xl sm:text-xl font-bold font-serif text-white ">
             IMRAN HOSSAIN
           </h2>
           <h4 className="lg:text-lg sm:text-xs text-xs font-serif font-medium text-white">
@@ -22,7 +22,7 @@ const LeftSidebar = () => {
       </div>
       <div className="w-full  mt-4 flex items-center justify-center">
         <Image
-          className="lg:w-full w-[300px] h-72 items-center justify-center rounded-xl "
+          className="lg:w-full w-[300px] h-60 items-center justify-center rounded-xl "
           src={profile}
           alt="profile-image"
         ></Image>
@@ -38,11 +38,11 @@ const LeftSidebar = () => {
           uttara, Dhaka, Bangladesh
         </h3>
         <p className="lg:text-sm sm:text-xs cs-screen:text-[12px] font-serif font-medium text-white text-center mt-1">
-          @ 2023 IMRAN. All Rights Reserved
+          @ 2024 IMRAN. All Rights Reserved
         </p>
       </div>
       {/*  icon-design css calss is a resuable css it is in global css */}
-      <div className="mt-12">
+      <div className="mt-5">
         <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
           <span className="icon-design">
             <FaLinkedin />

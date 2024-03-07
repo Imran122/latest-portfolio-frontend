@@ -23,7 +23,7 @@ const ContactComponent = () => {
             <input
               type="text"
               placeholder="Enter Name..."
-              className="p-4 rounded-lg font-medium border  bg-[#212529] border-gray-200 focus:ring-primary_colour focus:ring focus:text-white "
+              className="p-4 rounded-lg font-medium border border-gray-200 bg-[#212529]  focus:ring-primary_colour focus:ring focus:text-white "
             />
           </div>
           <div className="  flex flex-col mb-4 bg-none">

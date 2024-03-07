@@ -3,13 +3,13 @@ const AboutComponent = () => {
   return (
     <div id="about">
       {/*  body button */}
-      <div className="middle-body-buton mt-28">
+      <div className="middle-body-buton mt-16">
         <BsPersonCircle />
         <h4>ABOUT</h4>
       </div>
 
       {/*   title of the div */}
-      <div className="mt-16">
+      <div className="mt-16 pr-3">
         <h3 className="middle-body-title">
           Unlocking Digital{" "}
           <span className="text-primary_colour"> Dreams 🚀</span> | Crafting
@@ -17,7 +17,7 @@ const AboutComponent = () => {
           <span className="text-primary_colour"> Magic ✨</span> | Let`s Make
           Your Ideas <span className="text-primary_colour"> Soar 🚀</span>
         </h3>
-        <p className="text-text_colour font-sans text-base mt-4 lg:pr-60 cs-screen:pr-0 pr-0 text-justify">
+        <p className="text-text_colour font-sans text-lg mt-4 lg:pr-60 cs-screen:pr-0 pr-0 text-justify">
           I specialize in creating tailored web applications using TypeScript,
           React js, Next js, Node js, Express js,MongoDB, and postgreSQL. My
           focus is understanding client`s unique requirement and collaborating
