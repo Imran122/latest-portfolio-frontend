@@ -3,7 +3,7 @@ const AboutComponent = () => {
   return (
     <div id="about">
       {/*  body button */}
-      <div className="middle-body-buton mt-28">
+      <div className="middle-body-buton mt-16">
         <BsPersonCircle />
         <h4>ABOUT</h4>
       </div>
