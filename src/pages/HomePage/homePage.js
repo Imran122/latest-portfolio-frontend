@@ -7,7 +7,6 @@ import ResumeComponent from "@/components/HomeComponents/ResumeComponent";
 import ServiceComponent from "@/components/HomeComponents/ServiceComponent";
 import RightSidebar from "@/components/Shared/RightSidebar";
 import React, { useEffect, useState } from "react";
-
 const HomePage = () => {
   const [isMobile, setIsMobile] = useState(false);
   const LeftSidebar = React.lazy(() =>
@@ -33,7 +32,7 @@ const HomePage = () => {
     };
   }, []);
   return (
-    <div className="grid lg:grid-cols-10 px-3 lg:px-0 gap-8 ">
+    <div className="grid lg:grid-cols-10 px-3 lg:px-0 gap-8 relative">
       {/* previous design without tab */}
       {/*  <div className="lg:h-screen lg:col-span-2  lg:sticky lg:top-0 flex items-center lg:left-2">
         <div className="border border-secondary_colour lg:w-full cs-screen:w-80 cs-screen-second:w-96 mx-auto rounded-xl">
@@ -43,6 +42,10 @@ const HomePage = () => {
         </div>
       </div>
  */}
+
+      {/*  top bg image */}
+
+      {/*  top bg image */}
       <React.Suspense fallback={<div>Loading...</div>}>
         {isMobile ? (
           <LeftSideBarTab />
@@ -55,7 +58,7 @@ const HomePage = () => {
         )}
       </React.Suspense>
       {/*  <div className="lg:col-span-7 lg:max-w-6xl mx-auto border lg:mt-16 sm:mt-6 mt-6"> */}
-      <div className="lg:col-span-7   lg:mt-16 sm:mt-6 mt-6">
+      <div className="lg:col-span-7   ">
         <div className="w-full lg:px-36 overflow-hidden">
           <IntroductionComponent></IntroductionComponent>
           <AboutComponent></AboutComponent>

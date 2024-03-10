@@ -1,4 +1,5 @@
 import DashboardLayout from "@/DashboardLayout/DashboardLayout";
+import "@/styles/card.scss";
 import "@/styles/globals.css";
 import Aos from "aos";
 import "aos/dist/aos.css";

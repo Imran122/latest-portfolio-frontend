@@ -21,10 +21,10 @@
     @apply text-white text-5xl font-light font-custom_intro_font;
   }
   .middle-body-skill-div {
-    @apply flex flex-col gap-2 w-24 h-24 justify-center items-center text-center border border-text_colour hover:border-primary_colour rounded-full;
+    @apply flex flex-col gap-2 w-24 h-24 justify-center items-center text-center border border-text_colour group-hover:border-primary_colour rounded-full;
   }
   .middle-body-skill-h-text {
-    @apply text-text_colour text-sm font-custom_subtitle_font font-light mt-1 hover:text-primary_colour;
+    @apply text-text_colour text-sm font-custom_subtitle_font font-light mt-1 group-hover:text-primary_colour;
   }
   .details-page-icon-design {
     @apply flex flex-col p-4 justify-center items-center text-center border border-primary_colour hover:border-teal-600 rounded-full;
@@ -34,6 +34,7 @@
 html {
   scroll-behavior: smooth;
   background-color: #212529;
+  /*  background-color: #0d1224; */
 }
 :root {
   --custom_button_color: #e25e3e;

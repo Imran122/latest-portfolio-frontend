@@ -38,49 +38,71 @@ const MySkills = () => {
           Back-end Tech :--
         </h4>
         <div className="grid lg:grid-cols-8 cs-screen-second:grid-cols-6 cs-screen:grid-cols-5 grid-cols-4 md:grid-cols-6 gap-3">
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back10} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">javascript</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div ">
+              <Image className="w-8 h-8" src={back10} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">javascript</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back1} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">typescript</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back1} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">typescript</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back2} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">Node js</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back2} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">Node js</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back3} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">express Js</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back3} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">express Js</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back4} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">Docker</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back4} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">Docker</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back5} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">prisma</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back5} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">prisma</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back6} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">graphql</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back6} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">graphql</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back9} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">mongodb</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back9} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">mongodb</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back11} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">postgresql</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back11} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">postgresql</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back7} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">aws</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back7} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">aws</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={back8} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">gcp</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={back8} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">gcp</h2>
+            </div>
           </div>
         </div>
         {/*    front end design */}
@@ -88,25 +110,35 @@ const MySkills = () => {
           front-end Tech :--
         </h4>
         <div className="grid lg:grid-cols-8 cs-screen-second:grid-cols-6 cs-screen:grid-cols-5 grid-cols-4 md:grid-cols-6 gap-3">
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={front1} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">react js</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={front1} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">react js</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={front2} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">next js</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={front2} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">next js</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={front3} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">Redux</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={front3} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">Redux</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={front4} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">bootstrap</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={front4} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">bootstrap</h2>
+            </div>
           </div>
-          <div className="middle-body-skill-div">
-            <Image className="w-8 h-8" src={front5} alt="skillimage"></Image>
-            <h2 className="middle-body-skill-h-text">tailwind css</h2>
+          <div className="group ">
+            <div className="middle-body-skill-div">
+              <Image className="w-8 h-8" src={front5} alt="skillimage"></Image>
+              <h2 className="middle-body-skill-h-text">tailwind css</h2>
+            </div>
           </div>
         </div>
       </div>
