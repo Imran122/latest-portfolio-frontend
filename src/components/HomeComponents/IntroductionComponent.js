@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import { FaArrowDown } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
+import heroimg from "../../assets/images/bg/hero.svg";
 import projectimg from "../../assets/images/middle/round-text.png";
 const IntroductionComponent = () => {
   useEffect(() => {
@@ -47,9 +48,15 @@ const IntroductionComponent = () => {
   }, []);
 
   return (
-    <div id="home">
+    <div id="home" className="relative">
       {/*  body button */}
-      <div className="middle-body-buton">
+
+      {/* banner image */}
+      <div className="absolute top-0 left-0 w-full ">
+        <Image className=" w-full" src={heroimg} alt="image" />
+      </div>
+      {/* banner image */}
+      <div className="middle-body-buton lg:mt-16 sm:mt-6 mt-6">
         <IoHome />
         <h4>INTRUDUCE</h4>
       </div>

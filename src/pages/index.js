@@ -2,7 +2,7 @@ import HomePage from "./HomePage/homePage";
 
 export default function Home() {
   return (
-    <main className="bg-[#212529]">
+    <main className="">
       <HomePage></HomePage>
     </main>
   );
